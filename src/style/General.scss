@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+$FontFamily: "Inter", sans-serif;
+$PrimaryColor: #163D6A;
+$SecondaryColor: #F1885C;
+$BackgroundColor: #F3F6FA;
+
+
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+a {
+     text-decoration: none;
+}
+
+/* General Styles */
+body {
+     margin: 0;
+     font-family: $FontFamily;
+     color: $PrimaryColor;
+     line-height: 1.6;
+     font-size: .8rem;
+}
+
+.landing-page-container {
+     width: 100%;
+}
+
+
+
+
+/* UI Style */
+
+// Primary button
+a.primary-button {
+     text-decoration: none;
+     color: #ffffff;
+     background-color: $SecondaryColor;
+     border: .1rem solid $SecondaryColor;
+     font-size: .8rem;
+     font-weight: 500;
+     border-radius: 10rem;
+     padding: 0.4rem 2rem;
+     width: fit-content;
+     cursor: pointer;
+}
+a.primary-button.small {
+     padding: 0.3rem 1rem;
+}
+a.primary-button:hover {
+     color: $SecondaryColor;
+     background-color: transparent;
+     border: .1rem solid $SecondaryColor;
+}
+
+a.outline-button {
+     text-decoration: none;
+     color: $SecondaryColor;
+     background-color: #ffffff;
+     border: .1rem solid $SecondaryColor;
+     font-size: .8rem;
+     font-weight: 500;
+     border-radius: 10rem;
+     padding: 0.4rem 2rem;
+     width: fit-content;
+     cursor: pointer;
+}
+a.outline-button:hover {
+     color: #ffffff;
+     background-color: $SecondaryColor;
+     border: .1rem solid #ffffff;
+}
+

@@ -1,0 +1,28 @@
+@import "./General";
+
+/* Header */
+.header-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1rem 3rem;
+     background-color: $PrimaryColor;
+     color: #ffffff;
+
+     .logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     
+     nav {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+
+          a {
+               color: #ffffff;
+          }
+     }
+
+}
