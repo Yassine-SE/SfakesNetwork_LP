@@ -1,0 +1,43 @@
+@import "./General";
+
+
+.footer-container {
+     position: relative;
+
+     .footer-wrapper {
+          width: 100%;
+          padding: 3rem;
+          background-color: $PrimaryColor;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          align-items: center;
+          justify-content: center;
+
+          .footer-nav {
+               display: flex;
+               gap: 5rem;
+
+               .links {
+                    display: flex;
+                    gap: 2rem;
+
+                    a {
+                         color: #ffffff;
+                    }
+               }
+          }
+          
+          p {
+               color: #ffffff;
+          }
+     }
+
+     .footer-bg {
+          width: 100%;
+          transform: rotate(180deg);
+          position: relative;
+          bottom: -1rem;
+     }
+
+}

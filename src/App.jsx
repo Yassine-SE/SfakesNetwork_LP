@@ -4,6 +4,7 @@ import Header from "./compenents/Header";
 import Hero from "./compenents/Hero";
 import Feature from "./compenents/Feature";
 import Action from "./compenents/Action";
+import Footer from "./compenents/Footer";
 
 
 
@@ -35,6 +36,7 @@ const App = () => {
                }
                
                <Action />
+               <Footer />
 
 
           </div>

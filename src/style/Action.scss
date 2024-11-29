@@ -2,17 +2,29 @@
 
 
 .action-container {
-     width: 100%;
-     padding: 3rem;
-     background-color: $SecondaryColor;
      display: flex;
-     gap: 5rem;
      align-items: center;
      justify-content: center;
 
-     h2 {
-          color: #ffffff;
-          font-weight: 500;
+     .action-wrapper {
+          width: 55rem;
+          padding: 3rem;
+          background-color: $SecondaryColor;
+          display: flex;
+          gap: 5rem;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          bottom: -10rem;
+          border-radius: 1rem;
+          z-index: 9;
+
+          h2 {
+               color: #ffffff;
+               font-weight: 500;
+               width: 60%;
+               font-size: 1rem;
+          }
      }
 
 }
