@@ -1,14 +1,14 @@
-import "./style/General.scss"
+import "../style/General.scss"
 
-import Header from "./compenents/Header";
-import Hero from "./compenents/Hero";
-import Feature from "./compenents/Feature";
-import Action from "./compenents/Action";
-import Footer from "./compenents/Footer";
+import Header from "../compenents/Header";
+import Hero from "../compenents/Hero";
+import Feature from "../compenents/Feature";
+import Action from "../compenents/Action";
+import Footer from "../compenents/Footer";
 
 
 
-const App = () => {
+const Home = () => {
 
 
 
@@ -28,9 +28,9 @@ const App = () => {
                <Hero />
 
                {
-                    features_content.map((item) => {
+                    features_content.map((item, index) => {
                          return (
-                              <Feature direction={item.direction} headline={item.headline} text={item.text} />
+                              <Feature key={index} direction={item.direction} headline={item.headline} text={item.text} />
                          )
                     })
                }
@@ -43,4 +43,4 @@ const App = () => {
      );
 };
 
-export default App;
+export default Home;

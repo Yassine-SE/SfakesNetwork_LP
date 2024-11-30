@@ -3,47 +3,72 @@
 /* Hero */
 .feature-container {
      width: 100%;
-     height: 35rem;
+     height: 100vh;
      display: flex;
+     justify-content: center;
+     align-items: center;
      overflow: hidden;
      background-color: #163d6a0d;
+     position: relative;
 
-     .feature-content-wrapper {
-          width: 50%;
-          padding: 3rem;
+     .feature-wrapper {
+          width: 65rem;
+          height: inherit;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
-          gap: 1rem;
-     }
-     
-     .feature-image-wrapper {
-          width: 50%;
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
 
-          img {
-               width: 40rem;
+          .feature-content-wrapper {
+               width: 50%;
+               padding: 3rem;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               gap: 1rem;
+          }
+          
+          .feature-image-wrapper {
+               width: 50%;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               z-index: 9;
+
+               img {
+                    width: 30rem;
+                    border-radius: 1rem;
+                    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+               }
+          }
+          
+          .feature-image-bg {
                position: absolute;
                right: -5rem;
-               border-radius: 1rem;
-               box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+               top: 0px;
+               bottom: 0px;
+               background-color: $PrimaryColor;
+               width: 50%;
+               border-radius: 0px 0px 0px 40rem;
           }
+
      }
-     
-     .feature-image-wrapper.right {
+}
+
+
+.feature-container.right {
+     background-color: #ffffff;
+
+     .feature-image-wrapper {
 
           img {
                right: unset;
                left: -5rem;
           }
      }
+     
+     .feature-image-bg {
+          right: unset;
+          left: -5rem;
+          border-radius: 0px 0px 40rem 0rem;
+          background-color: $SecondaryColor;
+     }
 
-}
-
-
-.feature-container.right {
-     background-color: #ffffff;
 }
