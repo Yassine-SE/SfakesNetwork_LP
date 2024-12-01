@@ -22,8 +22,8 @@ const Hero = () => {
                     <img className="hero-image" src={dashImg} alt="Lead Management Dashboard" />
 
                     <div className="hero-logos">
-                         <img src={facebookImg} alt="" />
-                         <img src={instagramImg} alt="" />
+                         <img className="facebook-icon" src={facebookImg} alt="" />
+                         <img className="instagram-icon" src={instagramImg} alt="" />
                     </div>
 
                     <img className="hero-bg" src={bgImg} alt="" />

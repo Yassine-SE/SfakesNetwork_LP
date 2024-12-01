@@ -1,4 +1,4 @@
-@import "./General";
+@import "./Variable.scss";
 
 /* Header */
 .header-container {
@@ -15,17 +15,23 @@
           justify-content: center;
      }
      
-     nav {
+     .header-nav {
           display: flex;
-          align-items: center;
-          gap: 2rem;
+          gap: 6rem;
 
-          a {
-               color: #ffffff;
+          nav {
+               display: flex;
+               align-items: center;
+               gap: 2rem;
+     
+               a {
+                    color: #ffffff;
+               }
+               a:hover {
+                    color: $SecondaryColor;
+               }
           }
-          a:hover {
-               color: $SecondaryColor;
-          }
+
      }
 
 }

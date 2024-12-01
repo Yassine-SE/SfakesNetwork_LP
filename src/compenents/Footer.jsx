@@ -16,8 +16,8 @@ const Footer = () => {
                          <img className="logo" src={logo} alt="" />
 
                          <div className="links">
-                              <a href="#privacy">Privacy Policy</a>
-                              <a href="#terms">Terms of Service</a>
+                              <a href="/privacy">Privacy Policy</a>
+                              <a href="/terms">Terms of Service</a>
                          </div>
                     </nav>
                     

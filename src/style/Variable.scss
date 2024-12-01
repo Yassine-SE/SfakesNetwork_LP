@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+@font-face {
+     font-family: "EinaLight";
+     src: local("Eina02-Light"), url("../fonts/Eina02-Light.ttf") format("opentype");
+}
+@font-face {
+     font-family: "EinaRegular";
+     src: local("Eina02-Regular"), url("../fonts/Eina02-Regular.ttf") format("opentype");
+}
+@font-face {
+     font-family: "EinaSemieBold";
+     src: local("Eina02-SemieBold"), url("../fonts/Eina02-SemieBold.ttf") format("opentype");
+}
+@font-face {
+     font-family: "EinaBold";
+     src: local("Eina02-Bold"), url("../fonts/Eina02-Bold.ttf") format("opentype");
+}
+
+$FontLight: "EinaLight", sans-serif;
+$FontRegular: "EinaRegular", sans-serif;
+$FontSemieBold: "EinaSemieBold", sans-serif;
+$FontBold: "EinaBold", sans-serif;
+
+$FontFamily: "Manrope", sans-serif;
+
+$PrimaryColor: #163D6A;
+$SecondaryColor: rgba(248, 117, 55, 1);
+$BackgroundColor: #F3F6FA;

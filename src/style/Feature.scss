@@ -1,4 +1,4 @@
-@import "./General";
+@import "./Variable.scss";
 
 /* Hero */
 .feature-container {
@@ -7,8 +7,8 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     overflow: hidden;
-     background-color: #163d6a0d;
+     // overflow: hidden;
+     // background-color: #163d6a0d;
      position: relative;
 
      .feature-wrapper {
@@ -23,6 +23,18 @@
                flex-direction: column;
                justify-content: center;
                gap: 1rem;
+
+               h2 {
+                    color: $PrimaryColor;
+                    font-family: $FontBold;
+                    font-size: 2rem;
+               }
+               
+               p {
+                    color: $PrimaryColor;
+                    font-size: .8rem;
+                    font-weight: 500;
+               }
           }
           
           .feature-image-wrapper {
@@ -30,13 +42,22 @@
                display: flex;
                flex-direction: column;
                justify-content: center;
+               position: relative;
                z-index: 9;
 
-               img {
+               .feature-image {
                     width: 30rem;
                     border-radius: 1rem;
                     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
                }
+               
+               .blob-bg {
+                    position: absolute;
+                    right: -6rem;
+                    width: 40rem;
+                    z-index: -1;
+               }
+
           }
           
           .feature-image-bg {
@@ -47,14 +68,16 @@
                background-color: $PrimaryColor;
                width: 50%;
                border-radius: 0px 0px 0px 40rem;
+
           }
+          
 
      }
 }
 
 
 .feature-container.right {
-     background-color: #ffffff;
+     // background-color: #ffffff;
 
      .feature-image-wrapper {
 
@@ -69,6 +92,11 @@
           left: -5rem;
           border-radius: 0px 0px 40rem 0rem;
           background-color: $SecondaryColor;
+     }
+
+     .blob-bg {
+          right: unset;
+          left: -6rem;
      }
 
 }

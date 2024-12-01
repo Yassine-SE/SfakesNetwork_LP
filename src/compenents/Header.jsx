@@ -9,16 +9,22 @@ const Header = () => {
                     <img src={logo} alt="" />
                </div>
 
-               <nav className="nav">
-                    <a href="#features">Features</a>
-                    <a href="#services">Vision</a>
-                    <a href="#contact">Contact</a>
-               </nav>
+               <div className="header-nav">
 
-               <nav className="nav">
-                    <a href="https://app.ouispad.fr/login">Login</a>
-                    <a className="primary-button small" href="https://app.ouispad.fr/signup">Get Started</a>
-               </nav>
+                    <nav className="nav">
+                         <a href="#services">Home</a>
+                         <a href="#services">Vision</a>
+                         <a href="#features">Features</a>
+                         <a href="#features">Team</a>
+                         <a href="#contact">Contact</a>
+                    </nav>
+
+                    <nav className="nav">
+                         <a href="https://app.ouispad.fr/login">Login</a>
+                         <a className="primary-button small" href="https://app.ouispad.fr/signup">Get Started</a>
+                    </nav>
+
+               </div>
 
           </header>
      );

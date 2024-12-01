@@ -1,4 +1,4 @@
-@import "./General";
+@import "./Variable.scss";
 
 /* Hero */
 .hero-container {
@@ -24,13 +24,18 @@
 
                h1 {
                     color: #ffffff;
-                    font-size: 2rem;
+                    font-family: $FontBold;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    background: -webkit-linear-gradient(45deg, rgb(248 117 55), rgb(255 231 101));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                }
 
                p {
                     color: #ffffff;
                     font-size: .8rem;
-                    opacity: .5;
+                    opacity: .8;
                     letter-spacing: .1rem;
                     width: 25rem;
                     margin-bottom: 2rem;
@@ -64,7 +69,11 @@
 
                img {
                     width: 6rem;
+               }
 
+               .instagram-icon {
+                    position: relative;
+                    top: .2rem;
                }
           }
      }

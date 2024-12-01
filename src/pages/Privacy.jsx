@@ -12,6 +12,8 @@ const Privacy = () => {
      return (
           <div className="page-container">
 
+               <h1>Privacy</h1>
+
           </div>
      );
 };
