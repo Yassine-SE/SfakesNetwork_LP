@@ -5,6 +5,8 @@
      display: flex;
      align-items: center;
      justify-content: center;
+     margin-bottom: 3rem;
+     margin-top: 6rem;
 
      .action-wrapper {
           width: 55rem;
@@ -15,7 +17,7 @@
           align-items: center;
           justify-content: center;
           position: relative;
-          bottom: -10rem;
+          // bottom: -10rem;
           border-radius: 1rem;
           z-index: 9;
 

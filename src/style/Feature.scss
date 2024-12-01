@@ -3,12 +3,10 @@
 /* Hero */
 .feature-container {
      width: 100%;
-     height: 100vh;
+     height: 35rem;
      display: flex;
      justify-content: center;
      align-items: center;
-     // overflow: hidden;
-     // background-color: #163d6a0d;
      position: relative;
 
      .feature-wrapper {
@@ -33,9 +31,10 @@
                
                p {
                     color: $PrimaryColor;
-                    font-size: .8rem;
+                    font-size: .9rem;
                     font-weight: 500;
                     margin-bottom: 1rem;
+                    line-height: 2;
                }
           }
           

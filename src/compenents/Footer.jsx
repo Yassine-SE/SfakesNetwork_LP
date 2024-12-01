@@ -8,7 +8,7 @@ const Footer = () => {
      return (
           <footer className="footer-container">
                
-               <img className="footer-bg" src={bgImg} alt="" />
+               {/* <img className="footer-bg" src={bgImg} alt="" /> */}
 
                <div className="footer-wrapper">
 
