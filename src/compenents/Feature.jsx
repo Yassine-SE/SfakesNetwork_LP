@@ -16,7 +16,7 @@ const Feature = ({ direction, headline, text }) => {
                          <div className="feature-content-wrapper">
                               <h2>{headline}</h2>
                               <p>{text}</p>
-                              <a className="outline-button" href="https://app.ouispad.fr/signup">Try it now</a>
+                              <a className="outline-button" href="https://app.ouispad.fr/signup">Essayer maintenant !</a>
                          </div>
 
                          <div className="feature-image-wrapper">
@@ -39,7 +39,7 @@ const Feature = ({ direction, headline, text }) => {
                          <div className="feature-content-wrapper">
                               <h2>{headline}</h2>
                               <p>{text}</p>
-                              <a className="outline-button" href="https://app.ouispad.fr/signup">Try it now</a>
+                              <a className="outline-button" href="https://app.ouispad.fr/signup">Essayer maintenant !</a>
                          </div>
                          
                          {/* <div className="feature-image-bg"></div> */}

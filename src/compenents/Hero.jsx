@@ -11,9 +11,9 @@ const Hero = () => {
                <div className="hero-content-wrapper">
 
                     <div className="hero-content">
-                         <h1>Effortless lead ad creation</h1>
-                         <p>Simplify your ad creation process and reach your audience faster.</p>
-                         <a className="primary-button" href="https://app.ouispad.fr/signup">Try it now</a>
+                         <h1>Des prospects de Qualité, en Toute Simplicité. </h1>
+                         <p>Une solution simple et performante pour concevoir, optimiser et suivre vos campagnes sur Facebook et Instagram.</p>
+                         <a className="primary-button" href="https://app.ouispad.fr/signup">Essayer maintenant !</a>
                     </div>
 
                </div>

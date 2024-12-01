@@ -25,11 +25,13 @@
                h1 {
                     color: #ffffff;
                     font-family: $FontBold;
+                    width: 40rem;
                     font-size: 3rem;
                     font-weight: 500;
                     background: -webkit-linear-gradient(45deg, rgb(248 117 55), rgb(255 231 101));
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                    line-height: 1.4;
                }
 
                p {
@@ -37,7 +39,7 @@
                     font-size: .8rem;
                     opacity: .8;
                     letter-spacing: .1rem;
-                    width: 25rem;
+                    width: 30rem;
                     margin-bottom: 2rem;
                }
 

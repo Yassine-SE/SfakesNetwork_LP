@@ -13,10 +13,10 @@ const Home = () => {
 
 
      const features_content = [
-          { direction: false, headline: "Ad Creation Tools", text: "User-friendly interfaces to design effective ads." },
-          { direction: true, headline: "Analytics Integration", text: "Insights to track campaign performance." },
-          { direction: false, headline: "Lead Management", text: "Streamlined tools to organize and nurture your leads effectively." },
-          { direction: true, headline: "Track contact", text: "Streamlined tools to organize and nurture your leads effectively." },
+          { direction: false, headline: "Boostez vos campagnes marketing grâce à notre solution !", text: "Suivez en temps réel les performances de vos campagnes avec notre outils intuitifs et détaillés. Analysez, optimisez, et maximisez vos résultats pour générer davantage de leads qualifiés." },
+          { direction: true, headline: "Transformez vos prospects en succès commerciaux !", text: "Organisez, suivez et qualifiez vos leads efficacement grâce à notre outil optimisé. Simplifiez la gestion de vos contacts et convertissez-les en opportunités concrètes." },
+          { direction: false, headline: "Restez connecté à vos prospects en toute simplicité !", text: "Centralisez, organisez et entretenez vos contacts avec notre outil intuitif. Assurez un suivi efficace pour construire des relations durables et fructueuses." },
+          { direction: true, headline: "Gérer vos prospects en toute simplicité !", text: "Centralisez, organisez et entretenez vos contacts avec notre ou8l intui8f. Assurez un suivi efficace pour construire des rela8ons durables et fructueuses." },
      ]
 
 
