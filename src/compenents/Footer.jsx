@@ -16,8 +16,8 @@ const Footer = () => {
                          <img className="logo" src={logo} alt="" />
 
                          <div className="links">
-                              <a href="/privacy">Privacy Policy</a>
-                              <a href="/terms">Terms of Service</a>
+                              <a href="/privacy">Politique de confidentialité</a>
+                              <a href="/terms">Conditions d'utilisation</a>
                          </div>
                     </nav>
                     

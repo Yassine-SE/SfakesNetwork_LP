@@ -1,0 +1,42 @@
+@import "./Variable.scss";
+
+
+.page-container {
+     width: 100%;
+     overflow: hidden;
+     
+     .page-content-container {
+          padding: 4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .page-content-wrapper {
+               width: 65rem;
+               font-family: $FontLight;
+               font-size: .9rem;
+               // font-weight: 700;
+               color: $PrimaryColor;
+               line-height: 1.8;
+
+               h1 {
+                    font-family: $FontSemieBold;
+                    font-size: 2rem;
+                    // font-weight: 700;
+                    color: $PrimaryColor;
+                    margin-bottom: 1rem;
+               }
+               h2 {
+                    font-family: $FontSemieBold;
+                    font-size: 1.6rem;
+                    // font-weight: 700;
+                    color: $PrimaryColor;
+                    margin-top: 3rem;
+                    margin-bottom: .8rem;
+               }
+
+
+
+          }
+     }
+}
