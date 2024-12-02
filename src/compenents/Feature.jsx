@@ -8,7 +8,7 @@ import imgBlob2 from "../assets/blob_2.svg"
 
 const Feature = ({ direction, headline, text }) => {
      return (
-          <section className={direction ? "feature-container right" : "feature-container" }>
+          <section id="Feature" className={direction ? "feature-container right" : "feature-container" }>
                <div className="feature-wrapper">
 
                     { !direction &&

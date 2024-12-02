@@ -12,15 +12,15 @@ const Header = () => {
                <div className="header-nav">
 
                     <nav className="nav">
-                         <a href="#services">Home</a>
-                         <a href="#services">Vision</a>
-                         <a href="#features">Features</a>
-                         <a href="#contact">Contact</a>
+                         <a href="/">Home</a>
+                         <a href="#Vision">Vision</a>
+                         <a href="#Feature">Features</a>
+                         <a href="#Contact">Contact</a>
                     </nav>
 
                     <nav className="nav">
                          <a href="https://app.ouispad.fr/login">Login</a>
-                         <a className="primary-button small" href="https://app.ouispad.fr/signup">Get Started</a>
+                         <a className="primary-button small" href="https://app.ouispad.fr/signup">Essayer maintenant</a>
                     </nav>
 
                </div>

@@ -2,11 +2,11 @@ import "../style/Vision.scss"
 
 const Vision = () => {
      return (
-          <section className="vision-container">
+          <section id="Vision" className="vision-container">
                <div className="vision-wrapper">
 
-                    <h2>Our vision</h2>
-                    <p>a future where self-entrepreneurs can create marketing and advertising as simple as clicking a button. No more complexity, no more confusion. just results. That's the world we're creating at Ouispad.</p>
+                    <h2>Notre vision</h2>
+                    <p>Un avenir où les petites entreprises peuvent concevoir des campagnes marketing et publicitaires en toute simplicité, sans nécessiter de compétences avancées. Notre plateforme, intuitive et facile d'utilisation, a un seul objectif : générer des prospects qualifiés à moindre coût. C'est le monde que nous construisons chez Ouispad.</p>
 
                </div>
           </section>
