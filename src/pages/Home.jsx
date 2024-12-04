@@ -7,6 +7,11 @@ import Feature from "../compenents/Feature";
 import Action from "../compenents/Action";
 import Footer from "../compenents/Footer";
 
+import DashImg from "../assets/dash_img.png"
+import CreateImg from "../assets/Create.png"
+import LeadsImg from "../assets/Leads.png"
+import HistoryImg from "../assets/History.png"
+
 
 
 const Home = () => {
@@ -14,10 +19,10 @@ const Home = () => {
 
 
      const features_content = [
-          { direction: false, headline: "Boostez vos campagnes marketing grâce à notre solution !", text: "Suivez en temps réel les performances de vos campagnes avec notre outils intuitifs et détaillés. Analysez, optimisez, et maximisez vos résultats pour générer davantage de leads qualifiés." },
-          { direction: true, headline: "Transformez vos prospects en succès commerciaux !", text: "Organisez, suivez et qualifiez vos leads efficacement grâce à notre outil optimisé. Simplifiez la gestion de vos contacts et convertissez-les en opportunités concrètes." },
-          { direction: false, headline: "Restez connecté à vos prospects en toute simplicité !", text: "Centralisez, organisez et entretenez vos contacts avec notre outil intuitif. Assurez un suivi efficace pour construire des relations durables et fructueuses." },
-          { direction: true, headline: "Gérer vos prospects en toute simplicité !", text: "Centralisez, organisez et entretenez vos contacts avec notre outil intuitif. Assurez un suiviefficace pour construire des relations durables et fructueuses." },
+          { direction: false, image: DashImg, headline: "Boostez vos campagnes marketing grâce à notre solution !", text: "Suivez en temps réel les performances de vos campagnes avec notre outils intuitifs et détaillés. Analysez, optimisez, et maximisez vos résultats pour générer davantage de leads qualifiés." },
+          { direction: true, image: CreateImg, headline: "Transformez vos prospects en succès commerciaux !", text: "Organisez, suivez et qualifiez vos leads efficacement grâce à notre outil optimisé. Simplifiez la gestion de vos contacts et convertissez-les en opportunités concrètes." },
+          { direction: false, image: LeadsImg, headline: "Restez connecté à vos prospects en toute simplicité !", text: "Centralisez, organisez et entretenez vos contacts avec notre outil intuitif. Assurez un suivi efficace pour construire des relations durables et fructueuses." },
+          { direction: true, image: HistoryImg, headline: "Gérer vos prospects en toute simplicité !", text: "Centralisez, organisez et entretenez vos contacts avec notre outil intuitif. Assurez un suiviefficace pour construire des relations durables et fructueuses." },
      ]
 
 
@@ -32,7 +37,7 @@ const Home = () => {
                {
                     features_content.map((item, index) => {
                          return (
-                              <Feature key={index} direction={item.direction} headline={item.headline} text={item.text} />
+                              <Feature key={index} direction={item.direction} headline={item.headline} text={item.text} image={item.image} />
                          )
                     })
                }

@@ -1,12 +1,11 @@
 import "../style/Feature.scss"
 
-import dashImg from "../assets/dash_img.png"
 import imgBlob from "../assets/blob.svg"
 import imgBlob2 from "../assets/blob_2.svg"
 // import imgBlob3 from "../assets/blob_3.svg"
 
 
-const Feature = ({ direction, headline, text }) => {
+const Feature = ({ direction, headline, text, image }) => {
      return (
           <section id="Feature" className={direction ? "feature-container right" : "feature-container" }>
                <div className="feature-wrapper">
@@ -20,11 +19,10 @@ const Feature = ({ direction, headline, text }) => {
                          </div>
 
                          <div className="feature-image-wrapper">
-                              <img className="feature-image" src={dashImg} alt="" />
+                              <img className="feature-image" src={image} alt="" />
                               <img className="blob-bg" src={imgBlob} alt="" />
                          </div>
 
-                         {/* <div className="feature-image-bg"></div> */}
                     </>
                     }
 
@@ -32,7 +30,7 @@ const Feature = ({ direction, headline, text }) => {
                     { direction &&
                     <>
                          <div className="feature-image-wrapper">
-                              <img className="feature-image" src={dashImg} alt="" />
+                              <img className="feature-image" src={image} alt="" />
                               <img className="blob-bg" src={imgBlob2} alt="" />
                          </div>
                          
@@ -42,8 +40,6 @@ const Feature = ({ direction, headline, text }) => {
                               <a className="primary-button white" href="https://app.ouispad.fr/signup">Essayer maintenant !</a>
                          </div>
                          
-                         {/* <div className="feature-image-bg"></div> */}
-                         {/* <img className="blob-bg" src={imgBlob2} alt="" /> */}
                     </>
                     }
 
