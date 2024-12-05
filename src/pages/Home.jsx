@@ -19,8 +19,8 @@ const Home = () => {
 
 
      const features_content = [
-          { direction: false, image: DashImg, headline: "Boostez vos campagnes marketing grâce à notre solution !", text: "Suivez en temps réel les performances de vos campagnes avec notre outils intuitifs et détaillés. Analysez, optimisez, et maximisez vos résultats pour générer davantage de leads qualifiés." },
-          { direction: true, image: CreateImg, headline: "Transformez vos prospects en succès commerciaux !", text: "Organisez, suivez et qualifiez vos leads efficacement grâce à notre outil optimisé. Simplifiez la gestion de vos contacts et convertissez-les en opportunités concrètes." },
+          { direction: false, image: CreateImg, headline: "Boostez vos campagnes marketing grâce à notre solution !", text: "Suivez en temps réel les performances de vos campagnes avec notre outils intuitifs et détaillés. Analysez, optimisez, et maximisez vos résultats pour générer davantage de leads qualifiés." },
+          { direction: true, image: DashImg, headline: "Transformez vos prospects en succès commerciaux !", text: "Organisez, suivez et qualifiez vos leads efficacement grâce à notre outil optimisé. Simplifiez la gestion de vos contacts et convertissez-les en opportunités concrètes." },
           { direction: false, image: LeadsImg, headline: "Restez connecté à vos prospects en toute simplicité !", text: "Centralisez, organisez et entretenez vos contacts avec notre outil intuitif. Assurez un suivi efficace pour construire des relations durables et fructueuses." },
           { direction: true, image: HistoryImg, headline: "Gérer vos prospects en toute simplicité !", text: "Centralisez, organisez et entretenez vos contacts avec notre outil intuitif. Assurez un suiviefficace pour construire des relations durables et fructueuses." },
      ]
