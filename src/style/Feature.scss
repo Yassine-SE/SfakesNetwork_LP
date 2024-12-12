@@ -3,16 +3,28 @@
 /* Hero */
 .feature-container {
      width: 100%;
-     height: 38rem;
+     min-height: 38rem;
      display: flex;
      justify-content: center;
      align-items: center;
      position: relative;
+     padding: 2rem 0;
+
+     @media (max-width: 768px) {
+          min-height: auto;
+          padding: 3rem 0;
+     }
 
      .feature-wrapper {
           width: 65rem;
           height: inherit;
           display: flex;
+
+          @media (max-width: 768px) {
+               width: 100%;
+               flex-direction: column;
+               gap: 2rem;
+          }
 
           .feature-content-wrapper {
                width: 50%;
@@ -22,11 +34,23 @@
                justify-content: center;
                gap: 1rem;
 
+               @media (max-width: 768px) {
+                    width: 100%;
+                    padding: 1.5rem;
+                    text-align: center;
+                    order: 1;
+                    align-items: center;
+               }
+
                h2 {
                     color: $PrimaryColor;
                     font-family: $FontBold;
                     font-size: 2rem;
                     line-height: 1.2;
+
+                    @media (max-width: 768px) {
+                         font-size: 1.5rem;
+                    }
                }
                
                p {
@@ -35,6 +59,11 @@
                     font-weight: 500;
                     margin-bottom: 1rem;
                     line-height: 2;
+
+                    @media (max-width: 768px) {
+                         font-size: 0.8rem;
+                         line-height: 1.8;
+                    }
                }
           }
           
@@ -46,10 +75,21 @@
                position: relative;
                z-index: 9;
 
+               @media (max-width: 768px) {
+                    width: 100%;
+                    order: 2;
+                    align-items: center;
+               }
+
                .feature-image {
                     width: 30rem;
                     border-radius: 1rem;
                     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+                    @media (max-width: 768px) {
+                         width: 90%;
+                         border-radius: 0.5rem;
+                    }
                }
                
                .blob-bg {
@@ -57,8 +97,11 @@
                     right: -6rem;
                     width: 40rem;
                     z-index: -1;
-               }
 
+                    @media (max-width: 768px) {
+                         display: none;
+                    }
+               }
           }
           
           .feature-image-bg {
@@ -70,12 +113,12 @@
                width: 50%;
                border-radius: 0px 0px 0px 40rem;
 
+               @media (max-width: 768px) {
+                    display: none;
+               }
           }
-          
-
      }
 }
-
 
 .feature-container.right {
      // background-color: #ffffff;
@@ -85,6 +128,10 @@
           img {
                right: unset;
                left: -5rem;
+
+               @media (max-width: 768px) {
+                    left: auto;
+               }
           }
      }
      

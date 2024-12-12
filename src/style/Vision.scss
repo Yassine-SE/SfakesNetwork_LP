@@ -1,13 +1,19 @@
 @import "./Variable.scss";
 
-
 .vision-container {
-     height: 20rem;
+     height: auto;
+     min-height: 20rem;
      display: flex;
      align-items: center;
      justify-content: center;
      margin-bottom: 3rem;
      background: radial-gradient(at top, #ffa72e1f, #ffffff00, #ffffff00);
+     padding: 2rem 1rem;
+     
+     @media (max-width: 768px) {
+          min-height: 15rem;
+          margin-bottom: 2rem;
+     }
      
      .vision-wrapper {
           width: 40rem;
@@ -16,22 +22,34 @@
           gap: 1.3rem;
           text-align: center;
 
+          @media (max-width: 768px) {
+               width: 100%;
+               max-width: 90%;
+               gap: 1rem;
+          }
           
           h2 {
                color: $SecondaryColor;
                font-family: $FontBold;
                font-size: 2rem;
                font-weight: 500;
+
+               @media (max-width: 768px) {
+                    font-size: 1.5rem;
+               }
           }
 
           p {
-               // color: #ffffff;
                font-size: .9rem;
                font-weight: 500;
                letter-spacing: 1px;
                line-height: 2;
+
+               @media (max-width: 768px) {
+                    font-size: 0.8rem;
+                    letter-spacing: 0.5px;
+                    line-height: 1.8;
+               }
           }
      }
-
-
 }

@@ -5,6 +5,10 @@
      position: relative;
      padding-bottom: 5rem;
 
+     @media (max-width: 768px) {
+          padding-bottom: 3rem;
+     }
+
      .hero-content-wrapper {
           display: flex;
           flex-direction: column;
@@ -15,6 +19,11 @@
           background-color: $PrimaryColor;
           position: relative;
           z-index: 1;
+
+          @media (max-width: 768px) {
+               padding: 4rem 1.5rem;
+               gap: 2rem;
+          }
           
           .hero-content {
                display: flex;
@@ -33,21 +42,28 @@
                     -webkit-text-fill-color: transparent;
                     line-height: 1.4;
                     text-shadow: 0px 2px 5px #00000012;
+
+                    @media (max-width: 768px) {
+                         width: 100%;
+                         font-size: 2rem;
+                    }
                }
 
                p {
                     color: #ffffff;
                     font-size: .8rem;
-                    // opacity: .8;
                     letter-spacing: 1px;
                     width: 35rem;
                     margin-bottom: 1rem;
                     line-height: 2;
+
+                    @media (max-width: 768px) {
+                         width: 100%;
+                         font-size: 0.75rem;
+                         letter-spacing: 0.5px;
+                    }
                }
-
-
           }
-          
      }
 
      
@@ -56,22 +72,41 @@
           flex-direction: column;
           align-items: center;
           gap: 3rem;
+
+          @media (max-width: 768px) {
+               gap: 2rem;
+               padding: 0 2rem 0 2rem;
+          }
           
           .hero-image {
                width: 50rem;
                border-radius: 1rem;
-               // margin-top: 2rem;
                position: relative;
                z-index: 9;
                box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+               @media (max-width: 768px) {
+                    width: 100%;
+                    border-radius: 0.5rem;
+               }
           }
 
           .hero-logos {
                display: flex;
                gap: 2rem;
+               flex-wrap: wrap;
+               justify-content: center;
+
+               @media (max-width: 768px) {
+                    gap: 1rem;
+               }
 
                img {
                     width: 8rem;
+
+                    @media (max-width: 768px) {
+                         width: 6rem;
+                    }
                }
 
                .instagram-icon {
@@ -88,5 +123,4 @@
           right: 0px;
           width: 100%;
      }
-
 }
