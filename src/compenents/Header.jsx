@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../style/Header.scss"
 import logo from "../assets/Ouispad-logo-white.svg"
+// import logo from "../assets/Ouispad-Logo.svg"
 
 const Header = () => {
      const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,14 +22,16 @@ const Header = () => {
 
                <div className={`header-nav ${isMenuOpen ? 'active' : ''}`}>
                     <nav className="nav">
-                         <a href="/" onClick={() => setIsMenuOpen(false)}>Accueil</a>
-                         <a href="/#Vision" onClick={() => setIsMenuOpen(false)}>Vision</a>
                          <a href="/#Feature" onClick={() => setIsMenuOpen(false)}>Fonctionnalités</a>
+                         <a href="/#Pricing" onClick={() => setIsMenuOpen(false)}>Pricing</a>
+                         <a href="/#Vision" onClick={() => setIsMenuOpen(false)}>Vision</a>
+                         <a href="/#FAQ" onClick={() => setIsMenuOpen(false)}>FAQ</a>
+                         <a href="/#Contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
                     </nav>
 
                     <nav className="nav">
                          <a href="https://app.ouispad.fr/login" onClick={() => setIsMenuOpen(false)}>Se connecter</a>
-                         <a className="primary-button small" href="https://app.ouispad.fr/signup" onClick={() => setIsMenuOpen(false)}>Essayer maintenant</a>
+                         <a className="primary-button small" href="https://app.ouispad.fr/signup" onClick={() => setIsMenuOpen(false)}>S'inscrire</a>
                     </nav>
                </div>
           </header>

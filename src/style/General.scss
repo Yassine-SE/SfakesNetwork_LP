@@ -27,6 +27,11 @@ body {
 }
 
 
+.text-highlight {
+     background: -webkit-linear-gradient(45deg, #FF9800, #FF5722);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
 
 
 /* UI Style */
@@ -35,27 +40,33 @@ body {
 a.primary-button {
      text-decoration: none;
      color: #ffffff;
+     background-image: linear-gradient(45deg, #f57c00, #FF5722);
+     // border: .1rem solid $PrimaryColor;
      // background-color: $SecondaryColor;
-     background-image: linear-gradient(35deg, $SecondaryColor, $SecondaryColor, rgba(251, 168, 31, 1));
-     border: .1rem solid $PrimaryColor;
      font-size: .9rem;
      font-weight: 600;
-     border-radius: 10rem;
+     border-radius: .4rem;
      padding: 0.8rem 1.8rem;
      width: fit-content;
      cursor: pointer;
+     display: flex;
+     align-items: center;
+     gap: .5rem;
+     
+     svg {
+          font-size: 1.2rem;
+     }
 }
-a.primary-button.white {
-     border: .1rem solid #ffffff;
-}
+// a.primary-button.white {
+//      border: .1rem solid #ffffff;
+// }
 a.primary-button.small {
-     padding: 0.3rem 1rem;
+     padding: 0.5rem 1rem;
      font-size: .8rem;
 }
 a.primary-button:hover {
-     color: $SecondaryColor;
-     background-image: unset;
-     border: .1rem solid $SecondaryColor;
+     color: #ffffff;
+     background-image: linear-gradient(45deg, #f57c00, #FF5722);
 }
 
 a.outline-button {
@@ -65,10 +76,17 @@ a.outline-button {
      border: .1rem solid $SecondaryColor;
      font-size: .8rem;
      font-weight: 600;
-     border-radius: 10rem;
-     padding: 0.4rem 2rem;
+     border-radius: .4rem;
+     padding: 0.8rem 1.8rem;
      width: fit-content;
      cursor: pointer;
+     display: flex;
+     align-items: center;
+     gap: .5rem;
+
+     svg {
+          font-size: 1.2rem;
+     }
 }
 a.outline-button.white {
      color: #ffffff;
@@ -76,7 +94,7 @@ a.outline-button.white {
 }
 a.outline-button:hover {
      color: #ffffff;
-     background-color: $SecondaryColor;
-     border: .1rem solid #ffffff;
+     background-color: #f57c00;
+     border: .1rem solid #f57c00;
 }
 

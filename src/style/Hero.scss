@@ -3,7 +3,14 @@
 /* Hero */
 .hero-container {
      position: relative;
-     padding-bottom: 5rem;
+     padding-bottom: 2rem;
+     display: flex;
+     background: $BackgroundDarkColor;
+
+     background-image: url("../assets/ouispad_lp_bg.avif");
+     background-position: 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
 
      @media (max-width: 768px) {
           padding-bottom: 3rem;
@@ -12,13 +19,11 @@
      .hero-content-wrapper {
           display: flex;
           flex-direction: column;
-          align-items: center;
-          text-align: center;
           gap: 3rem;
-          padding: 6rem 3rem 6rem 3rem;
-          background-color: $PrimaryColor;
+          padding: 4rem 3rem 4rem 7rem;
           position: relative;
           z-index: 1;
+          width: 50%;
 
           @media (max-width: 768px) {
                padding: 4rem 1.5rem;
@@ -28,18 +33,13 @@
           .hero-content {
                display: flex;
                flex-direction: column;
-               align-items: center;
-               gap: 1.3rem;
+               gap: 1rem;
 
                h1 {
-                    color: #ffffff;
+                    color: $WhiteColor;
                     font-family: $FontBold;
-                    width: 40rem;
                     font-size: 3rem;
                     font-weight: 500;
-                    background: -webkit-linear-gradient(45deg, rgb(248 117 55), rgb(255 231 101));
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
                     line-height: 1.4;
                     text-shadow: 0px 2px 5px #00000012;
 
@@ -50,18 +50,40 @@
                }
 
                p {
-                    color: #ffffff;
-                    font-size: .8rem;
-                    letter-spacing: 1px;
-                    width: 35rem;
+                    color: $WhiteColor;
+                    font-size: .9rem;
+                    font-weight: 500;
+                    // letter-spacing: 1px;
                     margin-bottom: 1rem;
                     line-height: 2;
+                    // opacity: .6;
 
                     @media (max-width: 768px) {
                          width: 100%;
                          font-size: 0.75rem;
                          letter-spacing: 0.5px;
                     }
+               }
+
+               .hero-call-to-action {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+               }
+
+               .hero-icons {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-top: 1rem;
+
+                    .trust-icons {
+                         width: 16rem;
+                    }
+                    .meta-icons {
+                         width: 10rem;
+                    }
+
                }
           }
      }
@@ -71,7 +93,12 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+          justify-content: center;
           gap: 3rem;
+          width: 50%;
+          position: relative;
+          right: 2rem;
+          perspective: 160rem;
 
           @media (max-width: 768px) {
                gap: 2rem;
@@ -79,15 +106,28 @@
           }
           
           .hero-image {
-               width: 50rem;
+               width: 32rem;
                border-radius: 1rem;
                position: relative;
                z-index: 9;
-               box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-
+               transform: rotateX(31deg) rotateY(342deg) rotateZ(12deg);
+               
                @media (max-width: 768px) {
                     width: 100%;
                     border-radius: 0.5rem;
+               }
+          }
+          
+          .blob-bg {
+               position: absolute;
+               right: 0rem;
+               top: -1rem;
+               width: 36rem;
+               transform: rotate(213deg);
+               opacity: .4;
+
+               @media (max-width: 768px) {
+                    display: none;
                }
           }
 
