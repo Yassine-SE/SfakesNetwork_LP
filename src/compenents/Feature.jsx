@@ -1,8 +1,6 @@
 import "../style/Feature.scss"
 
-import imgBlob from "../assets/blob.svg"
-import imgBlob2 from "../assets/blob_2.svg"
-// import imgBlob3 from "../assets/blob_3.svg"
+// import imgBlob from "../assets/blob.svg"
 
 
 const Feature = ({ direction, headline, text, image }) => {
@@ -20,7 +18,7 @@ const Feature = ({ direction, headline, text, image }) => {
 
                          <div className="feature-image-wrapper">
                               <img className="feature-image" src={image} alt="" />
-                              <img className="blob-bg" src={imgBlob} alt="" />
+                              {/* <img className="blob-bg" src={imgBlob} alt="" /> */}
                          </div>
 
                     </>
@@ -31,7 +29,7 @@ const Feature = ({ direction, headline, text, image }) => {
                     <>
                          <div className="feature-image-wrapper">
                               <img className="feature-image" src={image} alt="" />
-                              <img className="blob-bg" src={imgBlob2} alt="" />
+                              {/* <img className="blob-bg" src={imgBlob2} alt="" /> */}
                          </div>
                          
                          <div className="feature-content-wrapper">

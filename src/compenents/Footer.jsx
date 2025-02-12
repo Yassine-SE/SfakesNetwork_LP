@@ -1,7 +1,6 @@
 import "../style/Footer.scss"
 
 import logo from "../assets/Ouispad-logo-white.svg"
-import bgImg from "../assets/bg_hero.svg"
 
 
 const Footer = () => {
@@ -21,7 +20,7 @@ const Footer = () => {
                          </div>
                     </nav>
                     
-                    <p>© 2024 Ouispad. All rights reserved.</p>
+                    <p>© 2025 Ouispad. All rights reserved.</p>
                     
                </div>
                
