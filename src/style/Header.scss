@@ -3,16 +3,15 @@
 /* Header */
 .header-container {
      display: flex;
-     justify-content: space-between;
      align-items: center;
-     padding: 1rem 5rem;
-     background-color: $BackgroundDarkColor;
+     justify-content: center;
+     padding: 1rem 0rem;
      color: $WhiteColor;
-     position: relative;
      font-weight: 600;
      position: relative;
      z-index: 99;
      
+     background-color: $BackgroundDarkColor;
      background-image: url("../assets/ouispad_lp_bg.avif");
      background-position: 50%;
      background-repeat: no-repeat;
@@ -20,6 +19,13 @@
 
      @media (max-width: 768px) {
           padding: 1rem 1.5rem;
+     }
+
+     .header-wrapper {
+          width: 68rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
      }
 
      .logo {
@@ -75,6 +81,10 @@
 
                a.primary-button {
                     color: $WhiteColor;
+                    padding: 0.5rem 1.6rem;
+               }
+               a.signin-button {
+                    color: $SecondaryColor;
                }
           }
      }

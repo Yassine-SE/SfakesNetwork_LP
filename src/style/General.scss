@@ -92,6 +92,10 @@ a.outline-button.white {
      color: #ffffff;
      border: .1rem solid #ffffff;
 }
+a.outline-button.small {
+     padding: 0.5rem 1rem;
+     font-size: .8rem;
+}
 a.outline-button:hover {
      color: #ffffff;
      background-color: #f57c00;

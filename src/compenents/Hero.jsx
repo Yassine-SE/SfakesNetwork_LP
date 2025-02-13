@@ -8,6 +8,8 @@ import { IoPlayCircleOutline } from "react-icons/io5";
 const Hero = () => {
      return (
           <section className="hero-container">
+               <div className="hero-wrapper">
+
                <div className="hero-content-wrapper">
 
                     <div className="hero-content">
@@ -16,7 +18,7 @@ const Hero = () => {
                          
                          <div className="hero-call-to-action">
                               <a className="primary-button" href="https://app.ouispad.fr/signup">Essayer maintenant !</a>
-                              <a className="outline-button" href="https://app.ouispad.fr/signup">How it works <IoPlayCircleOutline/></a>
+                              <a className="outline-button" href="#">How it works <IoPlayCircleOutline/></a>
                          </div>
 
                          <div className="hero-icons">
@@ -51,8 +53,9 @@ const Hero = () => {
 
                     </div>
                </div>
-               
 
+               </div>
+               
           </section>
      );
 };

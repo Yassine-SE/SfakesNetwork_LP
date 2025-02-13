@@ -3,12 +3,17 @@
 /* Hero */
 .feature-container {
      width: 100%;
-     min-height: 38rem;
+     min-height: 30rem;
      display: flex;
      justify-content: center;
      align-items: center;
      position: relative;
      padding: 2rem 0;
+     background: $BackgroundDarkColor;
+     background-image: url("../assets/ouispad_lp_bg.avif");
+     background-position: 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
 
      @media (max-width: 768px) {
           min-height: auto;
@@ -43,10 +48,11 @@
                }
 
                h2 {
-                    color: $PrimaryColor;
+                    color: $WhiteColor;
                     font-family: $FontBold;
-                    font-size: 2rem;
+                    font-size: 2.4rem;
                     line-height: 1.2;
+                    text-shadow: 0px 2px 5px #00000012;
 
                     @media (max-width: 768px) {
                          font-size: 1.5rem;
@@ -54,12 +60,11 @@
                }
                
                p {
-                    color: $PrimaryColor;
+                    color: $WhiteColor;
                     font-size: .9rem;
-                    font-weight: 500;
+                    font-weight: 400;
                     margin-bottom: 1rem;
                     line-height: 2;
-                    opacity: .5;
 
                     @media (max-width: 768px) {
                          font-size: 0.8rem;

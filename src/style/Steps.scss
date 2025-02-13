@@ -1,0 +1,87 @@
+@import "./Variable.scss";
+
+/* Container */
+.steps-container {
+     background: #0a0a1a;
+     color: white;
+     padding: 3rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: $BackgroundDarkColor;
+     background-image: url("../assets/ouispad_lp_bg.avif");
+     background-position: 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+     .steps-wrapper {
+          display: flex;
+          align-items: center;
+     }
+
+
+}
+
+/* Sidebar */
+.sidebar {
+     width: 10%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     // gap: 2rem;
+}
+
+.step-button {
+     width: 6rem;
+     height: 6rem;
+     border: 1px solid #ff56224a;
+     border-radius: 1rem;
+     font-size: 2rem;
+     font-weight: bold;
+     cursor: pointer;
+     background: #ff562244;
+     color: white;
+     transition: background 0.3s ease-in-out;
+}
+
+.step-button.active {
+     background-image: linear-gradient(43deg, #FF5722, #FF9800);
+     color: white;
+     box-shadow: 0 0 40px #ff562280;
+}
+
+.step-button-linker {
+     background-color: #ff56224a;
+     justify-content: center;
+     align-items: center;
+     width: 1px;
+     height: 24px;
+     text-decoration: none;
+     display: flex;
+}
+
+/* Content Area */
+.content {
+     margin-left: 1rem;
+     padding: 2rem;
+     background: #08213dd1;
+     border-radius: 1rem;
+     width: 56rem;
+     height: 25rem;
+}
+
+.step-content {
+     animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+     from {
+          opacity: 0;
+          transform: translateX(10px);
+     }
+     to {
+          opacity: 1;
+          transform: translateX(0);
+     }
+}
+   

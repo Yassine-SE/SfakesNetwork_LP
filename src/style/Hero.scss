@@ -5,8 +5,9 @@
      position: relative;
      padding-bottom: 2rem;
      display: flex;
+     align-items: center;
+     justify-content: center;
      background: $BackgroundDarkColor;
-
      background-image: url("../assets/ouispad_lp_bg.avif");
      background-position: 50%;
      background-repeat: no-repeat;
@@ -14,6 +15,13 @@
 
      @media (max-width: 768px) {
           padding-bottom: 3rem;
+     }
+
+     
+     .hero-wrapper {
+          width: 80rem;
+          display: flex;
+          position: relative;
      }
 
      .hero-content-wrapper {

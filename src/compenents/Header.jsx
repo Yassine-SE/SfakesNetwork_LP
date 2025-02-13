@@ -12,6 +12,8 @@ const Header = () => {
 
      return (
           <header className="header-container">
+               <div className="header-wrapper">
+
                <div className="logo">
                     <img src={logo} alt="Ouispad Logo" />
                </div>
@@ -30,9 +32,11 @@ const Header = () => {
                     </nav>
 
                     <nav className="nav">
-                         <a href="https://app.ouispad.fr/login" onClick={() => setIsMenuOpen(false)}>Se connecter</a>
+                         <a className="signin-button" href="https://app.ouispad.fr/login" onClick={() => setIsMenuOpen(false)}>Se connecter</a>
                          <a className="primary-button small" href="https://app.ouispad.fr/signup" onClick={() => setIsMenuOpen(false)}>S'inscrire</a>
                     </nav>
+               </div>
+               
                </div>
           </header>
      );

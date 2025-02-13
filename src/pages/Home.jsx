@@ -2,6 +2,8 @@ import "../style/General.scss"
 
 import Header from "../compenents/Header";
 import Hero from "../compenents/Hero";
+import Headline from "../compenents/Headline";
+import Target from "../compenents/Target";
 import Vision from "../compenents/Vision";
 import Feature from "../compenents/Feature";
 import Action from "../compenents/Action";
@@ -11,6 +13,7 @@ import DashImg from "../assets/dash_img.png"
 import CreateImg from "../assets/Create.png"
 import LeadsImg from "../assets/Leads.png"
 import HistoryImg from "../assets/History.png"
+import Steps from "../compenents/Steps";
 
 
 
@@ -32,7 +35,18 @@ const Home = () => {
 
                <Header />
                <Hero />
-               <Vision />
+               
+               <Headline >
+                    Ouispad est conçu pour accompagner<br/>
+                    <span className="text-highlight">la réussite des professionnels comme vous</span>
+               </Headline>
+
+               <Target />
+               
+               <Headline >
+                    Ouispad est conçu <span className="text-highlight">pour accompagner</span><br/>
+                    la réussite des professionnels comme vous
+               </Headline>
 
                {
                     features_content.map((item, index) => {
@@ -42,8 +56,15 @@ const Home = () => {
                     })
                }
                
-               <Action />
-               <Footer />
+               <Headline >
+                    Ouispad est conçu <span className="text-highlight">pour accompagner</span><br/>
+                    la réussite des professionnels comme vous
+               </Headline>
+
+               <Steps />
+               
+               {/* <Action />
+               <Footer /> */}
 
 
           </div>
