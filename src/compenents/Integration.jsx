@@ -5,7 +5,7 @@ import Logo from "../assets/Ouispad-logo-white.svg";
 
 const Integration = () => {
   return (
-    <section className="integration-container">
+    <section id="Integration" className="integration-container">
       <div className="integration-wrapper">
         {/* Central Glowing Icon */}
         <div className="central-icon">

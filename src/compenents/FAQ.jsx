@@ -32,7 +32,7 @@ const FAQ = () => {
     };
 
     return (
-        <section className="faq-container">
+        <section id="FAQ" className="faq-container">
             <div className="faq-wrapper">
                 {faqs.map((faq, index) => (
                     <div key={index} className={`faq-item ${activeIndex === index ? "active" : ""}`} onClick={() => toggleFAQ(index)}>
