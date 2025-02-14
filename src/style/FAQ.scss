@@ -1,0 +1,57 @@
+@import "./Variable.scss";
+
+.faq-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-top: 3rem;
+     padding-bottom: 7rem;
+     background: $BackgroundDarkColor;
+     background-image: url("../assets/ouispad_lp_bg.avif");
+     background-position: 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ 
+ .faq-wrapper {
+     width: 50rem;
+     margin: 0 auto;
+     text-align: left;
+ }
+ 
+ .faq-item {
+     background: #081d36d1;
+     border-radius: 8px;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+     margin-bottom: 15px;
+     padding: 15px;
+     cursor: pointer;
+     transition: background 0.3s ease;
+ }
+ 
+ .faq-item:hover {
+     background: $SecondaryColor;
+ }
+ 
+ .faq-question {
+     font-family: $FontBold;
+     font-size: 1.1rem;
+     font-weight: bold;
+     color: $WhiteColor;
+ }
+ 
+ .faq-answer {
+     font-size: .8rem;
+     color: $WhiteColor;
+     margin-top: 10px;
+     display: none;
+ }
+ 
+ .faq-item.active {
+     background: $SecondaryColor;
+ }
+
+ .faq-item.active .faq-answer {
+     display: block;
+ }
+ 

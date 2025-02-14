@@ -4,16 +4,19 @@ import Header from "../compenents/Header";
 import Hero from "../compenents/Hero";
 import Headline from "../compenents/Headline";
 import Target from "../compenents/Target";
-import Vision from "../compenents/Vision";
 import Feature from "../compenents/Feature";
 import Action from "../compenents/Action";
+import Steps from "../compenents/Steps";
+import Integration from "../compenents/Integration";
+import Testimonials from "../compenents/Testimonials";
+import FAQ from "../compenents/FAQ";
 import Footer from "../compenents/Footer";
+import Vision from "../compenents/Vision";
 
 import DashImg from "../assets/dash_img.png"
 import CreateImg from "../assets/Create.png"
 import LeadsImg from "../assets/Leads.png"
 import HistoryImg from "../assets/History.png"
-import Steps from "../compenents/Steps";
 
 
 
@@ -56,15 +59,42 @@ const Home = () => {
                     })
                }
                
+               <Action />
+               
                <Headline >
                     Ouispad est conçu <span className="text-highlight">pour accompagner</span><br/>
                     la réussite des professionnels comme vous
                </Headline>
 
                <Steps />
+
+               <Headline >
+                    Ouispad est conçu <span className="text-highlight">pour accompagner</span><br/>
+                    la réussite des professionnels comme vous
+               </Headline>
+
+               <Integration />
                
-               {/* <Action />
-               <Footer /> */}
+               <Headline >
+                    <span className="text-highlight">What Our Clients Say</span><br/>
+               </Headline>
+
+               <Testimonials />
+               
+               <Headline >
+                    <span className="text-highlight">Frequently Asked Questions</span>
+               </Headline>
+
+               <FAQ />
+
+               <Headline >
+                    Ouispad est conçu <span className="text-highlight">pour accompagner</span><br/>
+                    la réussite des professionnels comme vous
+               </Headline>
+               
+               <Action />
+               
+               <Footer />
 
 
           </div>

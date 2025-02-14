@@ -1,0 +1,73 @@
+@import "./Variable.scss";
+
+.review-container {
+     text-align: center;
+     padding-top: 3rem;
+     padding-bottom: 9rem;
+     background: $BackgroundDarkColor;
+     background-image: url("../assets/ouispad_lp_bg.avif");
+     background-position: 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .review-wrapper {
+     width: 65rem;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 20px;
+ }
+ 
+ .testimonial-card {
+     background: #081d36d1;
+     border-radius: 1rem;
+     border: 1px solid #1a3b65;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     max-width: 300px;
+     text-align: center;
+     transition: transform 0.3s ease;
+ }
+ 
+ .testimonial-card:hover {
+     transform: translateY(-5px);
+ }
+ 
+ .profile-pic {
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     object-fit: cover;
+     margin-bottom: 15px;
+ }
+ 
+ .reviewer-name {
+     font-size: 1.2rem;
+     font-weight: bold;
+     margin-bottom: 10px;
+     color: $WhiteColor;
+ }
+ 
+ .review-text {
+     font-size: 1rem;
+     color: $WhiteColor;
+     margin-bottom: 15px;
+ }
+ 
+ .star-rating {
+     color: #ff8622;
+     font-size: 1.2rem;
+ }
+ 
+ .star {
+     color: #ddd;
+ }
+ 
+ .filled {
+     color: #ff8622;
+ }
+

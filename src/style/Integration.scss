@@ -1,0 +1,102 @@
+@import "./Variable.scss";
+
+.integration-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 9rem;
+  background: $BackgroundDarkColor;
+  background-image: url("../assets/ouispad_lp_bg.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.integration-wrapper {
+  width: 55rem;   // Fixed width for our coordinate system
+  height: 400px;  // Fixed height for our coordinate system
+  position: relative;
+}
+
+/* Central Glowing Icon */
+.central-icon {
+  width: 10rem;
+  height: 10rem;
+  background: linear-gradient(45deg, #FF5722, #FF9800);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 63px rgba(255, 87, 34, 0.55);
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  
+  img {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+/* Social Media Icons */
+.icon {
+  width: 60px;
+  height: 60px;
+  background: #0f2745;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  transition: transform 0.3s;
+  z-index: 1;
+}
+.icon:hover {
+  transform: scale(1.1);
+  background: #FF5722;
+}
+
+/* Position icons using coordinates that match the SVG paths */
+.icon.instagram {
+  top: 23px;   // approximately y = 90 (center of the icon)
+  left: 60px;  // approximately x = 90
+}
+.icon.facebook {
+  bottom: 23px; // approximately y = 310
+  left: 60px;   // approximately x = 90
+}
+.icon.google {
+  top: 23px;    // approximately y = 90
+  right: 60px;  // approximately x = 710
+}
+.icon.tiktok {
+  bottom: 23px; // approximately y = 310
+  right: 60px;  // approximately x = 710
+}
+
+/* SVG Connection Lines */
+.connection-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+//   pointer-events: none;  // allows clicks through the SVG
+}
+.connection-lines path {
+  fill: none;
+  stroke: #FFAB91;
+  stroke-width: 3;
+  stroke-linecap: round; // Rounded line ends
+  stroke-linejoin: round; // Rounded corners
+  transition: stroke 0.3s;
+}
+.connection-lines path:hover {
+  stroke: #FF5722;
+}
