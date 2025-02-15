@@ -1,4 +1,5 @@
 import "../style/Testimonials.scss";
+import { FaStar } from "react-icons/fa6";
 
 const testimonials = [
     {
@@ -50,7 +51,7 @@ const Testimonials = () => {
                         <p className="review-text">{testimonial.review}</p>
                         <div className="star-rating">
                             {Array.from({ length: 5 }, (_, i) => (
-                                <span key={i} className={i < testimonial.rating ? "star filled" : "star"}>★</span>
+                                <span key={i} className={i < testimonial.rating ? "star filled" : "star"}><FaStar /></span>
                             ))}
                         </div>
                     </div>
