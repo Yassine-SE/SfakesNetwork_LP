@@ -19,7 +19,7 @@
 
      
      .hero-wrapper {
-          width: 80rem;
+          width: 65rem;
           display: flex;
           position: relative;
      }
@@ -27,8 +27,8 @@
      .hero-content-wrapper {
           display: flex;
           flex-direction: column;
-          gap: 3rem;
-          padding: 4rem 3rem 4rem 7rem;
+          padding-bottom: 5rem;
+          padding-top: 3rem;
           position: relative;
           z-index: 1;
           width: 50%;
@@ -93,6 +93,73 @@
                     }
 
                }
+
+
+               .reviews-badge {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    .reviews-profiles {
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+
+                         .profile {
+                              width: 2.2rem;
+                              height: 2.2rem;
+                              border-radius: 50%;
+                              overflow: hidden;
+                              position: relative;
+                              border: 2px solid #ff7c32;
+
+                              img {
+                                   width: 100%;
+                                   object-fit: cover;
+                                   height: 100%;
+                                   vertical-align: middle;
+                                   display: inline-block;
+                              }
+                         }
+                         .profile.one {
+                              left: 0rem;
+                         }
+                         .profile.two {
+                              left: -.8rem;
+                         }
+                         .profile.three {
+                              left: -1.6rem;
+                         }
+                         .profile.four {
+                              left: -2.4rem;
+                         }
+                    }
+
+                    .reviews-content {
+                         position: relative;
+                         left: -1.8rem;
+                         bottom: .2rem;
+
+                         .reviews-stars {
+                              position: relative;
+                              bottom: -0.4rem;
+                              display: flex;
+                              gap: .4rem;
+
+                              .star {
+                                   font-size: .8rem;
+                              }
+                         }
+
+                         .reviews-text {
+                              color: $WhiteColor;
+                              font-size: .8rem;
+                              font-weight: 600;
+                         }
+                    }
+
+               }
+
           }
      }
 
@@ -105,7 +172,7 @@
           gap: 3rem;
           width: 50%;
           position: relative;
-          right: 2rem;
+          right: -2rem;
           perspective: 160rem;
 
           @media (max-width: 768px) {
@@ -128,7 +195,7 @@
           
           .blob-bg {
                position: absolute;
-               right: 0rem;
+               right: -4rem;
                top: -1rem;
                width: 36rem;
                transform: rotate(213deg);

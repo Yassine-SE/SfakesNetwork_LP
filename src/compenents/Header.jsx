@@ -3,12 +3,24 @@ import "../style/Header.scss"
 import logo from "../assets/Ouispad-logo-white.svg"
 // import logo from "../assets/Ouispad-Logo.svg"
 
+
+const scrollToSection = (id) => {
+     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+};
+
 const Header = () => {
      const [isMenuOpen, setIsMenuOpen] = useState(false);
 
      const toggleMenu = () => {
           setIsMenuOpen(!isMenuOpen);
      };
+
+     
+     const menuClicked = (id) => {
+          setIsMenuOpen(false)
+          scrollToSection(id)
+     };
+
 
      return (
           <header className="header-container">
@@ -24,11 +36,11 @@ const Header = () => {
 
                <div className={`header-nav ${isMenuOpen ? 'active' : ''}`}>
                     <nav className="nav">
-                         <a href="/#Feature" onClick={() => setIsMenuOpen(false)}>Fonctionnalités</a>
-                         <a href="/#Integration" onClick={() => setIsMenuOpen(false)}>Integration</a>
-                         <a href="/#FAQ" onClick={() => setIsMenuOpen(false)}>FAQ</a>
-                         <a href="/#Pricing" onClick={() => setIsMenuOpen(false)}>Pricing</a>
-                         <a href="/#Contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
+                         <a onClick={() => menuClicked("Feature")}>Fonctionnalités</a>
+                         <a onClick={() => menuClicked("Integration")}>Integration</a>
+                         <a onClick={() => menuClicked("FAQ")}>FAQ</a>
+                         <a onClick={() => menuClicked("Pricing")}>Pricing</a>
+                         <a onClick={() => menuClicked("Contact")}>Contact</a>
                     </nav>
 
                     <nav className="nav">

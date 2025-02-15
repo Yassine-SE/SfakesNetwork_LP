@@ -1,4 +1,5 @@
 import "../style/Hero.scss"
+import { FaStar } from "react-icons/fa6";
 
 import heroImg from "../assets/hero_image_2.png"
 import trust_image from "../assets/ouispad_reviews.png"
@@ -23,7 +24,42 @@ const Hero = () => {
 
                          <div className="hero-icons">
                               <img className="meta-icons" src={metaPartner} alt="" />
-                              <img className="trust-icons" src={trust_image} alt="" />
+                              {/* <img className="trust-icons" src={trust_image} alt="" /> */}
+
+                              <div className="reviews-badge">
+
+                                   <div className="reviews-profiles">
+                                        <div className="profile one">
+                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyW2MAFrFnfa_bT1jSttLbmvfotJcqQyCCGg&s" alt="" />
+                                        </div>
+                                        <div className="profile two">
+                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyW2MAFrFnfa_bT1jSttLbmvfotJcqQyCCGg&s" alt="" />
+                                        </div>
+                                        <div className="profile three">
+                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyW2MAFrFnfa_bT1jSttLbmvfotJcqQyCCGg&s" alt="" />
+                                        </div>
+                                        <div className="profile four">
+                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyW2MAFrFnfa_bT1jSttLbmvfotJcqQyCCGg&s" alt="" />
+                                        </div>
+                                   </div>
+
+                                   <div className="reviews-content">
+
+                                        <div className="reviews-stars">
+                                             <span class="star filled"><FaStar /></span>
+                                             <span class="star filled"><FaStar /></span>
+                                             <span class="star filled"><FaStar /></span>
+                                             <span class="star filled"><FaStar /></span>
+                                             <span class="star filled"><FaStar /></span>
+                                        </div>
+                                        
+                                        <div className="reviews-text">
+                                             Approuvé par les clients
+                                        </div>
+
+                                   </div>
+
+                              </div>
                          </div>
 
                     </div>
