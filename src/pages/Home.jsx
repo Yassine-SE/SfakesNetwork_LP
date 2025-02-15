@@ -11,7 +11,6 @@ import Integration from "../compenents/Integration";
 import Testimonials from "../compenents/Testimonials";
 import FAQ from "../compenents/FAQ";
 import Footer from "../compenents/Footer";
-import Vision from "../compenents/Vision";
 
 import DashImg from "../assets/dash_img.png"
 import CreateImg from "../assets/Create.png"
@@ -47,8 +46,7 @@ const Home = () => {
                <Target />
                
                <Headline >
-                    Ouispad est conçu <span className="text-highlight">pour accompagner</span><br/>
-                    la réussite des professionnels comme vous
+                    <span className="text-highlight">Advantage</span>
                </Headline>
 
                {
@@ -62,21 +60,19 @@ const Home = () => {
                <Action />
                
                <Headline >
-                    Ouispad est conçu <span className="text-highlight">pour accompagner</span><br/>
-                    la réussite des professionnels comme vous
+                    <span className="text-highlight">How it works</span>
                </Headline>
 
                <Steps />
 
                <Headline >
-                    Ouispad est conçu <span className="text-highlight">pour accompagner</span><br/>
-                    la réussite des professionnels comme vous
+                    <span className="text-highlight">Integration</span>
                </Headline>
 
                <Integration />
                
                <Headline >
-                    <span className="text-highlight">What Our Clients Say</span><br/>
+                    <span className="text-highlight">What Our Clients Say</span>
                </Headline>
 
                <Testimonials />
@@ -88,8 +84,7 @@ const Home = () => {
                <FAQ />
 
                <Headline >
-                    Ouispad est conçu <span className="text-highlight">pour accompagner</span><br/>
-                    la réussite des professionnels comme vous
+                    <span className="text-highlight">Call to action</span>
                </Headline>
                
                <Action />
