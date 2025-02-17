@@ -1,6 +1,5 @@
 import "../style/Target.scss"
 import Card from "./Card";
-import ImageTest from "../assets/ouispad_bg.jpg";
 import Coach from "../assets/coach.jpg";
 import Worker from "../assets/worker.jpg";
 import Beauty from "../assets/beauty.jpg";

@@ -15,11 +15,11 @@ const Hero = () => {
 
                     <div className="hero-content">
                          <h1>Des prospects de <br/><span className="text-highlight">Qualité, en Toute</span> <br/><span className="text-highlight">Simplicité.</span></h1>
-                         <p>Une solution simple et performante pour concevoir, <br/>optimiser et suivre vos campagnes sur <br/>Facebook et Instagram.</p>
+                         <p>Ouispad vous permet de créer et d’optimiser vos publicités <br/>en moins de 5 minutes, sans aucune compétence requise. <br/>Générez des leads de qualité en toute simplicité.</p>
                          
                          <div className="hero-call-to-action">
                               <a className="primary-button" href="https://app.ouispad.fr/signup">Essayer maintenant !</a>
-                              <a className="outline-button" href="#">How it works <IoPlayCircleOutline/></a>
+                              <a className="outline-button" href="#">Comment ça marche <IoPlayCircleOutline/></a>
                          </div>
 
                          <div className="hero-icons">

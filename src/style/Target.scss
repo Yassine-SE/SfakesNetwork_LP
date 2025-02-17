@@ -13,12 +13,6 @@
      background-repeat: no-repeat;
      background-size: cover;
      
-     @media (max-width: 768px) {
-          min-height: 15rem;
-          margin-bottom: 2rem;
-     }
-
-     
      .target-wrapper {
           width: 65rem;
           display: flex;
@@ -28,8 +22,8 @@
           
           @media (max-width: 768px) {
                width: 100%;
-               max-width: 90%;
-               gap: 1rem;
+               gap: 3rem;
+               flex-direction: column;
           }
           
 

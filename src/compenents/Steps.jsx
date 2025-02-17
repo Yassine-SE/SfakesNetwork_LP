@@ -1,24 +1,26 @@
 import { useState } from "react";
 import "../style/Steps.scss"
 
+import DefaultImg from "../assets/default_img.png"
+
 const steps = [
      {
-     id: 1,
-     title: "Step 1",
-     content:
-          "",
+          id: 1,
+          title: "1 - Renseignez-vos informations",
+          content: "Répondez au questionnaire de notre IA pour lui permettre de mieux comprendre votre entreprise : secteur d’activité, client cible, objectifs…",
+          image: DefaultImg,
      },
      {
-     id: 2,
-     title: "Step 2",
-     content:
-          "",
+          id: 2,
+          title: "2 - Finalisez votre publicité",
+          content: "Grâce à ces informations, Ouispad génère automatiquement une publicité adaptée à votre activité et à vos futurs clients. Vous pouvez modifier le texte, l’image et les paramètres (ex : budget, ciblage…) selon vos préférences.", 
+          image: DefaultImg,
      },
      {
-     id: 3,
-     title: "Step 3",
-     content:
-          "",
+          id: 3,
+          title: "3 - Lancez votre campagne et suivez vos prospects",
+          content: "Une fois votre publicité validée, elle est diffusée ! Il ne vous reste plus qu’à attendre vos premiers prospects et à les contacter. Un espace dédié vous permet de suivre et gérer efficacement vos leads.",
+          image: DefaultImg,
      },
 ];
 
@@ -52,6 +54,7 @@ const Steps = () => {
                     <div key={step.id} className="step-content">
                          <h2>{step.title}</h2>
                          <p>{step.content}</p>
+                         <img src={step.image} alt="" />
                     </div>
                ))}
           </div>

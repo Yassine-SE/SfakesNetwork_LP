@@ -9,27 +9,15 @@ import Action from "../compenents/Action";
 import Steps from "../compenents/Steps";
 import Integration from "../compenents/Integration";
 import Testimonials from "../compenents/Testimonials";
+import Simulator from "../compenents/Simulator";
 import FAQ from "../compenents/FAQ";
 import Footer from "../compenents/Footer";
 
-import DashImg from "../assets/dash_img.png"
-import CreateImg from "../assets/Create.png"
-import LeadsImg from "../assets/Leads.png"
-import HistoryImg from "../assets/History.png"
+import DefaultImg from "../assets/default_img.png"
 
 
 
 const Home = () => {
-
-
-
-     const features_content = [
-          { direction: false, image: CreateImg, headline: "Boostez vos campagnes marketing grâce à notre solution !", text: "Suivez en temps réel les performances de vos campagnes avec notre outils intuitifs et détaillés. Analysez, optimisez, et maximisez vos résultats pour générer davantage de leads qualifiés." },
-          { direction: true, image: DashImg, headline: "Transformez vos prospects en succès commerciaux !", text: "Organisez, suivez et qualifiez vos leads efficacement grâce à notre outil optimisé. Simplifiez la gestion de vos contacts et convertissez-les en opportunités concrètes." },
-          { direction: false, image: LeadsImg, headline: "Restez connecté à vos prospects en toute simplicité !", text: "Centralisez, organisez et entretenez vos contacts avec notre outil intuitif. Assurez un suivi efficace pour construire des relations durables et fructueuses." },
-          { direction: true, image: HistoryImg, headline: "Gérer vos prospects en toute simplicité !", text: "Centralisez, organisez et entretenez vos contacts avec notre outil intuitif. Assurez un suiviefficace pour construire des relations durables et fructueuses." },
-     ]
-
 
 
      return (
@@ -39,52 +27,81 @@ const Home = () => {
                <Hero />
                
                <Headline >
-                    Ouispad est conçu pour accompagner<br/>
-                    <span className="text-highlight">la réussite des professionnels comme vous</span>
+                    <h2>
+                         Ouispad est conçu pour accompagner<br/>
+                         <span className="text-highlight">la réussite des professionnels comme vous</span>
+                    </h2>
                </Headline>
 
                <Target />
                
                <Headline >
-                    <span className="text-highlight">Advantage</span>
+                    <h2>
+                         La publicité digitale enfin <br/>
+                         <span className="text-highlight">à votre portée</span>
+                    </h2>
                </Headline>
 
-               {
-                    features_content.map((item, index) => {
-                         return (
-                              <Feature key={index} direction={item.direction} headline={item.headline} text={item.text} image={item.image} />
-                         )
-                    })
-               }
+               <Feature direction={false} image={DefaultImg}>
+                    <h2>Laissez l’IA gérer vos campagnes</h2>
+                    <p>Fini les heures passées à comprendre les rouages de la publicité en ligne. Notre intelligence artificielle s’occupe de tout :</p>
+                    <ul>
+                         <li>Création automatique de publicités percutantes.</li>
+                         <li>Ciblage de clients les plus susceptibles d’être intéressés par vos services.</li>
+                         <li>Optimisation et gestion de vos campagnes pour maximiser votre retour sur investissement.</li>
+                    </ul>
+                    <p>Le tout sans effort de votre part.</p>
+               </Feature>
+               
+               <Feature direction={true} image={DefaultImg}>
+                    <h2>Une plateforme intuitive et accessible à tous</h2>
+                    <p>Lancer une campagne publicitaire n’a jamais été aussi simple. Grâce à une interface épurée et un processus guidé, même sans aucune expérience, vous pouvez créer des annonces performantes en quelques clics. La publicité digitale devient enfin accessible à tous.</p>
+               </Feature>
+               
+               <Feature direction={false} image={DefaultImg}>
+                    <h2>Transformez vos prospects en clients fidèles</h2>
+                    <p>Attirer des prospects, c’est bien, les transformer en clients, c’est mieux. Grâce à notre CRM intégré, vous suivez vos leads, organisez vos relances et améliorez votre taux de conversion sans effort. Tout est centralisé pour optimiser votre acquisition client.</p>
+               </Feature>
                
                <Action />
                
                <Headline >
-                    <span className="text-highlight">How it works</span>
+                    <h2>
+                         3 étapes simples vous <br/>
+                         séparent <span className="text-highlight">du succès !</span>
+                    </h2>
                </Headline>
 
                <Steps />
 
-               <Headline >
-                    <span className="text-highlight">Integration</span>
+               <Headline>
+                    <h2>En partenariat avec <span className="text-highlight">les meilleurs</span></h2>
+                    <p>Ouispad vous assure une visibilité optimale en diffusant vos publicités sur les réseaux sociaux et moteurs de recherche les plus consultés, grâce à nos partenariats stratégiques</p>
                </Headline>
 
                <Integration />
                
-               <Headline >
-                    <span className="text-highlight">What Our Clients Say</span>
-               </Headline>
+               {/* <Headline >
+                    <h2><span className="text-highlight">What Our Clients Say</span></h2>
+               </Headline> */}
 
-               <Testimonials />
+               {/* <Testimonials /> */}
                
-               <Headline >
-                    <span className="text-highlight">Frequently Asked Questions</span>
+               {/* <Headline >
+                    <span className="text-highlight">Simulator</span>
                </Headline>
 
-               <FAQ />
+               <Simulator /> */}
+
+               {/* <Headline >
+                    <h2><span className="text-highlight">Frequently Asked Questions</span></h2>
+               </Headline> */}
+
+               {/* <FAQ /> */}
 
                <Headline >
-                    <span className="text-highlight">Call to action</span>
+                    <h2>Vous êtes à un clic de <span className="text-highlight">la réussite !</span></h2>
+                    <p>Lancez votre première campagne et voyez les résultats.</p>
                </Headline>
                
                <Action />

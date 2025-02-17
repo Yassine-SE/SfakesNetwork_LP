@@ -30,10 +30,19 @@
      background-repeat: no-repeat;
      background-size: cover;
      
+     @media (max-width: 768px) {
+          padding-top: 5rem;
+     }
+     
      .integration-wrapper {
           width: 55rem;
           height: 400px;
           position: relative;
+          
+          @media (max-width: 768px) {
+               scale: 1.2;
+               margin-top: 2rem;
+          }
      }
 
 }
@@ -54,9 +63,13 @@
      left: 50%;
      transform: translate(-50%, -50%) scale(1);
      z-index: 1;
-
      animation: pulseAnimation 2s infinite;
      
+     @media (max-width: 768px) {
+          width: 8rem;
+          height: 8rem;
+     }
+
      img {
           width: 60%;
           height: 60%;
@@ -97,18 +110,46 @@
 .icon.instagram {
      top: 23px;   // approximately y = 90 (center of the icon)
      left: 60px;  // approximately x = 90
+     
+     @media (max-width: 768px) {
+          top: -5px;
+          left: 100px;
+     }
 }
 .icon.facebook {
      bottom: 23px; // approximately y = 310
      left: 60px;   // approximately x = 90
+
+     @media (max-width: 768px) {
+          bottom: -5px;
+          left: 100px;
+     }
 }
 .icon.google {
      top: 23px;    // approximately y = 90
      right: 60px;  // approximately x = 710
+     
+     @media (max-width: 768px) {
+          top: -5px;
+          right: 100px;
+     }
+     
+     .soon {
+          
+          @media (max-width: 768px) {
+               bottom: 0;
+               top: -1.3rem;
+          }
+     }
 }
 .icon.tiktok {
      bottom: 23px; // approximately y = 310
      right: 60px;  // approximately x = 710
+     
+     @media (max-width: 768px) {
+          bottom: -5px;
+          right: 100px;
+     }
 }
 
 /* SVG Connection Lines */
@@ -118,7 +159,11 @@
      left: 0;
      width: 100%;
      height: 100%;
-//   pointer-events: none;  // allows clicks through the SVG
+     //pointer-events: none;  // allows clicks through the SVG
+
+     @media (max-width: 768px) {
+          transform: rotate(90deg);
+     }
 }
 .connection-lines path {
      fill: none;

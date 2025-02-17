@@ -1,12 +1,11 @@
 import "../style/Headline.scss"
 
-const Headline = ({ children, text }) => {
+const Headline = ({ children }) => {
      return (
           <section className="headline-container">
                <div className="headline-wrapper">
 
-                    <h2>{children}</h2>
-                    <p>{text}</p>
+                    {children}
 
                </div>
           </section>

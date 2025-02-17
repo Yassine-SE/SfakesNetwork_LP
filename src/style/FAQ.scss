@@ -15,8 +15,12 @@
  
  .faq-wrapper {
      width: 50rem;
-     margin: 0 auto;
      text-align: left;
+     
+     @media (max-width: 768px) {
+        width: 100%;
+        padding: 0px 2rem;
+    }
  }
  
  .faq-item {

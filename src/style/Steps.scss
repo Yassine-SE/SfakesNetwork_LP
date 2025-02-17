@@ -17,6 +17,13 @@
      .steps-wrapper {
           display: flex;
           align-items: center;
+          
+          @media (max-width: 768px) {
+               width: 100%;
+               flex-direction: column;
+               gap: 2rem;
+               padding: 0px 2rem;
+          }
      }
 
 
@@ -29,6 +36,11 @@
      flex-direction: column;
      align-items: center;
      // gap: 2rem;
+
+     @media (max-width: 768px) {
+          flex-direction: unset;
+          width: unset;
+     }
 }
 
 .step-button {
@@ -58,6 +70,11 @@
      height: 24px;
      text-decoration: none;
      display: flex;
+     
+     @media (max-width: 768px) {
+          width: 24px;
+          height: 1px;
+     }
 }
 
 /* Content Area */
@@ -67,11 +84,34 @@
      background: #08213dd1;
      border-radius: 1rem;
      width: 52rem;
-     height: 25rem;
+     height: 30rem;
+     overflow: hidden;
+     
+     @media (max-width: 768px) {
+          width: 100%;
+          height: auto;
+          margin: 0px;
+     }
 }
 
 .step-content {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
      animation: fadeIn 0.4s ease-in-out;
+
+     p {
+          line-height: 1.8;
+     }
+
+     img {
+          border-radius: 1rem;
+          margin: 0px 3rem;
+          
+          @media (max-width: 768px) {
+               margin: 0px 1rem;
+          }
+     }
 }
 
 @keyframes fadeIn {
