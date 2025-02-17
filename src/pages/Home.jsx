@@ -28,7 +28,7 @@ const Home = () => {
                
                <Headline >
                     <h2>
-                         Ouispad est conçu pour accompagner<br/>
+                         Ouispad est conçu pour accompagner <br/>
                          <span className="text-highlight">la réussite des professionnels comme vous</span>
                     </h2>
                </Headline>

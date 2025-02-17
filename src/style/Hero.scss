@@ -75,6 +75,14 @@
                          font-size: 0.75rem;
                          letter-spacing: 0.5px;
                     }
+
+                    br {
+                         
+                         @media (max-width: 768px) {
+                              display: none;
+                         }
+
+                    }
                }
 
                .hero-call-to-action {

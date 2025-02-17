@@ -39,6 +39,14 @@
                @media (max-width: 768px) {
                     font-size: 1.8rem;
                }
+               
+               br {
+                         
+                    @media (max-width: 768px) {
+                         display: none;
+                    }
+
+               }
           }
           
           p {
@@ -53,6 +61,14 @@
 
                @media (max-width: 768px) {
                     font-size: 1rem;
+               }
+               
+               br {
+                         
+                    @media (max-width: 768px) {
+                         display: none;
+                    }
+
                }
           }
 
