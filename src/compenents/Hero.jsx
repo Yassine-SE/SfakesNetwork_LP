@@ -19,14 +19,14 @@ const Hero = () => {
                          
                          <div className="hero-call-to-action">
                               <a className="primary-button" href="https://app.ouispad.fr/signup">Essayer maintenant !</a>
-                              <a className="outline-button" href="#">Comment ça marche <IoPlayCircleOutline/></a>
+                              {/* <a className="outline-button" href="#">Comment ça marche <IoPlayCircleOutline/></a> */}
                          </div>
 
                          <div className="hero-icons">
                               <img className="meta-icons" src={metaPartner} alt="" />
                               {/* <img className="trust-icons" src={trust_image} alt="" /> */}
 
-                              <div className="reviews-badge">
+                              {/* <div className="reviews-badge">
 
                                    <div className="reviews-profiles">
                                         <div className="profile one">
@@ -57,9 +57,9 @@ const Hero = () => {
                                              Approuvé par les clients
                                         </div>
 
-                                   </div>
+                                   </div> 
 
-                              </div>
+                              </div>*/}
                          </div>
 
                     </div>

@@ -27,7 +27,9 @@ const Header = () => {
                <div className="header-wrapper">
 
                <div className="logo">
-                    <img src={logo} alt="Ouispad Logo" />
+                    <a href="/">
+                         <img src={logo} alt="Ouispad Logo" />
+                    </a>
                </div>
 
                <button className="mobile-menu-button" onClick={toggleMenu}>
