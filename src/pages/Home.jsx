@@ -81,11 +81,11 @@ const Home = () => {
 
                <Integration />
                
-               {/* <Headline >
-                    <h2><span className="text-highlight">What Our Clients Say</span></h2>
-               </Headline> */}
+               <Headline >
+                    <h2>Ça marche déjà pour nos utilisateurs. <br/><span className="text-highlight">Pourquoi pas vous ?</span></h2>
+               </Headline>
 
-               {/* <Testimonials /> */}
+               <Testimonials />
                
                {/* <Headline >
                     <span className="text-highlight">Simulator</span>
@@ -93,11 +93,11 @@ const Home = () => {
 
                <Simulator /> */}
 
-               {/* <Headline >
-                    <h2><span className="text-highlight">Frequently Asked Questions</span></h2>
-               </Headline> */}
+               <Headline >
+                    <h2><span className="text-highlight">Questions fréquemment posées</span></h2>
+               </Headline>
 
-               {/* <FAQ /> */}
+               <FAQ />
 
                <Headline >
                     <h2>Vous êtes à un clic de <span className="text-highlight">la réussite !</span></h2>
