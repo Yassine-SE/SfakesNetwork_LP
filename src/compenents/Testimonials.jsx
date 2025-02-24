@@ -46,7 +46,7 @@ const Testimonials = () => {
             <div className="review-wrapper">
                 {testimonials.map((testimonial, index) => (
                     <div key={index} className="testimonial-card">
-                        <img src={testimonial.image} alt={testimonial.name} className="profile-pic" />
+                        {/* <img src={testimonial.image} alt={testimonial.name} className="profile-pic" /> */}
                         {/* <h3 className="review-title">{testimonial.title}</h3> */}
                         <p className="review-text">{testimonial.review}</p>
                         <div className="star-rating">

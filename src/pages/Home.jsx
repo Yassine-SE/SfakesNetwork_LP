@@ -14,6 +14,11 @@ import FAQ from "../compenents/FAQ";
 import Footer from "../compenents/Footer";
 
 import DefaultImg from "../assets/default_img.png"
+import IAImg from "../assets/ia-image.png"
+import LeadsImg from "../assets/leads-image.png"
+import DashImg from "../assets/dashboard-image.png"
+import DashImg2 from "../assets/dashboard-image-2.png"
+import DashImg3 from "../assets/dashboard-image-3.png"
 
 
 
@@ -42,7 +47,7 @@ const Home = () => {
                     </h2>
                </Headline>
 
-               <Feature direction={false} image={DefaultImg}>
+               <Feature direction={false} image={IAImg}>
                     <h2>Laissez l’IA gérer vos campagnes</h2>
                     <p>Fini les heures passées à comprendre les rouages de la publicité en ligne. Notre intelligence artificielle s’occupe de tout :</p>
                     <ul>
@@ -53,12 +58,12 @@ const Home = () => {
                     <p>Le tout sans effort de votre part.</p>
                </Feature>
                
-               <Feature direction={true} image={DefaultImg}>
+               <Feature direction={true} image={DashImg3}>
                     <h2>Une plateforme intuitive et accessible à tous</h2>
                     <p>Lancer une campagne publicitaire n’a jamais été aussi simple. Grâce à une interface épurée et un processus guidé, même sans aucune expérience, vous pouvez créer des annonces performantes en quelques clics. La publicité digitale devient enfin accessible à tous.</p>
                </Feature>
                
-               <Feature direction={false} image={DefaultImg}>
+               <Feature direction={false} image={LeadsImg}>
                     <h2>Transformez vos prospects en clients fidèles</h2>
                     <p>Attirer des prospects, c’est bien, les transformer en clients, c’est mieux. Grâce à notre CRM intégré, vous suivez vos leads, organisez vos relances et améliorez votre taux de conversion sans effort. Tout est centralisé pour optimiser votre acquisition client.</p>
                </Feature>
