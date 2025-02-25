@@ -1,8 +1,7 @@
 import "../style/Hero.scss"
 import { FaStar } from "react-icons/fa6";
 
-import heroImg from "../assets/hero_image_2.png"
-import trust_image from "../assets/ouispad_reviews.png"
+import heroImg from "../assets/Hero-image.png"
 import metaPartner from "../assets/Fb-Badge.png"
 import { IoPlayCircleOutline } from "react-icons/io5";
 

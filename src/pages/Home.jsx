@@ -16,8 +16,6 @@ import Footer from "../compenents/Footer";
 import DefaultImg from "../assets/default_img.png"
 import IAImg from "../assets/ia-image.png"
 import LeadsImg from "../assets/leads-image.png"
-import DashImg from "../assets/dashboard-image.png"
-import DashImg2 from "../assets/dashboard-image-2.png"
 import DashImg3 from "../assets/dashboard-image-3.png"
 
 
