@@ -1,6 +1,7 @@
 import "../style/Footer.scss";
 import logo from "../assets/Ouispad-logo-white.svg";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
 
@@ -35,10 +36,10 @@ const Footer = () => {
                 <div className="footer-social">
                     <h4>Suivez-nous</h4>
                     <div className="social-icons">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+                        <a href="https://instagram.com/ouispad" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                        <a href="#" rel="noopener noreferrer"><FaFacebookF /></a>
+                        <a href="#" rel="noopener noreferrer"><FaXTwitter /></a>
+                        <a href="#" rel="noopener noreferrer"><FaLinkedinIn /></a>
                     </div>
                 </div>
             </div>
