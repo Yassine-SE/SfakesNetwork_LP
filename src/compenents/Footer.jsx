@@ -8,7 +8,7 @@ const Footer = () => {
     
 
     return (
-        <footer className="footer-container">
+        <footer id="Footer" className="footer-container">
             <div className="footer-wrapper">
                 <div className="footer-logo">
                     <a href="/">
@@ -16,14 +16,12 @@ const Footer = () => {
                     </a>
                 </div>
                 
-                {/* <div className="footer-links">
-                    <h4>Quick Links</h4>
+                <div className="footer-links">
+                    <h4>Contact</h4>
                     <ul>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/services">Our Services</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="mailto:contact@ouispad.fr">contact@ouispad.fr</a></li>
                     </ul>
-                </div> */}
+                </div>
                 
                 <div className="footer-privacy">
                     <h4>Légal</h4>

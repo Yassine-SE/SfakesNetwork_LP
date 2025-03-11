@@ -42,7 +42,7 @@ const Header = () => {
                          <a onClick={() => menuClicked("Integration")}>Integration</a>
                          <a onClick={() => menuClicked("FAQ")}>FAQ</a>
                          {/* <a onClick={() => menuClicked("Pricing")}>Pricing</a> */}
-                         <a onClick={() => menuClicked("Contact")}>Contact</a>
+                         <a onClick={() => menuClicked("Footer")}>Contact</a>
                     </nav>
 
                     <nav className="nav">
