@@ -17,7 +17,7 @@ const Hero = () => {
                          <p>Ouispad vous permet de créer et d’optimiser vos publicités <br/>en moins de 5 minutes, sans aucune compétence requise. <br/>Générez des leads de qualité en toute simplicité.</p>
                          
                          <div className="hero-call-to-action">
-                              <a className="primary-button" href="https://app.ouispad.fr/signup">Essayer maintenant, c’est gratuit !</a>
+                              <a id="Signup_btn" className="primary-button" href="https://app.ouispad.fr/signup">Essayer maintenant, c’est gratuit !</a>
                               {/* <a className="outline-button" href="#">Comment ça marche <IoPlayCircleOutline/></a> */}
                          </div>
 
