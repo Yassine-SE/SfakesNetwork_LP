@@ -5,7 +5,7 @@ import "../style/Feature.scss"
 
 const Feature = ({ direction, image, children }) => {
      return (
-          <section id="Feature" className={direction ? "feature-container right" : "feature-container" }>
+          <section id="Services" className={direction ? "feature-container right" : "feature-container" }>
                <div className="feature-wrapper">
 
                     { !direction &&
@@ -15,6 +15,7 @@ const Feature = ({ direction, image, children }) => {
                          </div>
 
                          <div className="feature-image-wrapper">
+                              <div className="feature-image-overlay"></div>
                               <img className="feature-image" src={image} alt="" />
                          </div>
                     </>
@@ -24,6 +25,7 @@ const Feature = ({ direction, image, children }) => {
                     { direction &&
                     <>
                          <div className="feature-image-wrapper">
+                              <div className="feature-image-overlay"></div>
                               <img className="feature-image" src={image} alt="" />
                          </div>
                          

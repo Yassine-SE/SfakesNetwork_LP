@@ -1,22 +1,22 @@
 import "../style/General.scss"
 
-import Header from "../compenents/Header";
 import Hero from "../compenents/Hero";
+import Brand from "../compenents/Brands";
 import Headline from "../compenents/Headline";
-import Target from "../compenents/Target";
+import Vision from "../compenents/Vision";
 import Feature from "../compenents/Feature";
 import Action from "../compenents/Action";
-import Steps from "../compenents/Steps";
-import Integration from "../compenents/Integration";
-import Testimonials from "../compenents/Testimonials";
-import Simulator from "../compenents/Simulator";
-import FAQ from "../compenents/FAQ";
+// import Steps from "../compenents/Steps";
+// import Integration from "../compenents/Integration";
+// import Testimonials from "../compenents/Testimonials";
+// import FAQ from "../compenents/FAQ";
 import Footer from "../compenents/Footer";
 
-import DefaultImg from "../assets/default_img.png"
-import IAImg from "../assets/ia-image.png"
-import LeadsImg from "../assets/leads-image.png"
-import DashImg3 from "../assets/dashboard-image-3.png"
+import Network_img from "../assets/Network_img.jpg"
+import Surveillance_img from "../assets/Surveillance_img.jpg"
+import Wifi_img from "../assets/Wifi_img.jpg"
+import Access_img from "../assets/Access_img.jpg"
+import Sound_img from "../assets/Sound_img.jpg"
 
 
 
@@ -26,88 +26,54 @@ const Home = () => {
      return (
           <div className="landing-page-container">
 
-               <Header />
                <Hero />
                
-               <Headline >
-                    <h2>
-                         Ouispad est conçu pour accompagner <br/>
-                         <span className="text-highlight">la réussite des professionnels comme vous</span>
-                    </h2>
-               </Headline>
-
-               <Target />
-               
-               <Headline >
-                    <h2>
-                         La publicité digitale enfin <br/>
-                         <span className="text-highlight">à votre portée</span>
-                    </h2>
-               </Headline>
-
-               <Feature direction={false} image={IAImg}>
-                    <h2>Laissez l’IA gérer vos campagnes</h2>
-                    <p>Fini les heures passées à comprendre les rouages de la publicité en ligne. Notre intelligence artificielle s’occupe de tout :</p>
-                    <ul>
-                         <li>Création automatique de publicités percutantes.</li>
-                         <li>Ciblage de clients les plus susceptibles d’être intéressés par vos services.</li>
-                         <li>Optimisation et gestion de vos campagnes pour maximiser votre retour sur investissement.</li>
-                    </ul>
-                    <p>Le tout sans effort de votre part.</p>
-               </Feature>
-               
-               <Feature direction={true} image={DashImg3}>
-                    <h2>Une plateforme intuitive et accessible à tous</h2>
-                    <p>Lancer une campagne publicitaire n’a jamais été aussi simple. Grâce à une interface épurée et un processus guidé, même sans aucune expérience, vous pouvez créer des annonces performantes en quelques clics. La publicité digitale devient enfin accessible à tous.</p>
-               </Feature>
-               
-               <Feature direction={false} image={LeadsImg}>
-                    <h2>Transformez vos prospects en clients fidèles</h2>
-                    <p>Attirer des prospects, c’est bien, les transformer en clients, c’est mieux. Grâce à notre CRM intégré, vous suivez vos leads, organisez vos relances et améliorez votre taux de conversion sans effort. Tout est centralisé pour optimiser votre acquisition client.</p>
-               </Feature>
-               
-               <Action />
-               
-               <Headline >
-                    <h2>
-                         3 étapes simples vous <br/>
-                         séparent <span className="text-highlight">du succès !</span>
-                    </h2>
-               </Headline>
-
-               <Steps />
+               <Brand />
 
                <Headline>
-                    <h2>En partenariat avec <span className="text-highlight">les meilleurs</span></h2>
-                    <p>Ouispad vous assure une visibilité optimale en diffusant vos publicités sur les réseaux sociaux et moteurs de recherche les plus consultés, grâce à nos partenariats stratégiques</p>
+                    <h2>Nos Services Technologiques Experts</h2>
+                    <p>Découvrez notre gamme de services conçus pour améliorer votre sécurité, <br/>votre communication et votre confort de vie.</p>
+                    {/* <p>Des réseaux sécurisés aux systèmes de surveillance intelligents et de sonorisation, <br/>nous offrons des solutions adaptées à vos besoins.</p> */}
                </Headline>
-
-               <Integration />
                
-               <Headline >
-                    <h2>Ça marche déjà pour nos utilisateurs. <br/><span className="text-highlight">Pourquoi pas vous ?</span></h2>
-               </Headline>
+               <Feature direction={false} image={Network_img}>
+                    <h2>Infrastructure réseau fiable pour une connectivité sans faille</h2>
+                    <p>Nous installons des réseaux filaires et sans fil pour les maisons et les entreprises. Que ce soit pour un nouveau bureau ou une mise à niveau, nous assurons une connexion rapide et sécurisée grâce aux routeurs, commutateurs et câblages structurés les plus récents.</p>
+               </Feature>
 
-               <Testimonials />
+               <Feature direction={true} image={Surveillance_img}>
+                    <h2>Sécurité 24h/24 avec des systèmes de surveillance intelligents</h2>
+                    <p>Protégez votre maison ou votre entreprise avec des caméras HD, détection de mouvement, vision nocturne et accès à distance via smartphone. Nos solutions CCTV sont conçues pour une surveillance en temps réel et un enregistrement sécurisé.</p>
+               </Feature>
                
-               {/* <Headline >
-                    <span className="text-highlight">Simulator</span>
-               </Headline>
+               <Feature direction={false} image={Wifi_img}>
+                    <h2>Couverture WiFi complète pour rester connecté partout</h2>
+                    <p>Fini les zones sans signal. Nous concevons et installons des réseaux WiFi professionnels avec couverture mesh pour toute la maison ou le bâtiment. Profitez d’un internet rapide et stable sur tous vos appareils.</p>
+               </Feature>
+               
+               <Feature direction={true} image={Access_img}>
+                    <h2>Alarmes intelligentes et contrôle d’accès pour une sécurité maximale</h2>
+                    <p>Nos systèmes de sécurité détectent les intrusions grâce à des détecteurs de mouvement, capteurs de portes/fenêtres et alarmes connectées. Nous proposons également des solutions de contrôle d’accès pour les portes, portails et zones sensibles.</p>
+               </Feature>
+               
+               <Feature direction={false} image={Sound_img}>
+                    <h2>Solutions audio sur mesure pour tous les environnements</h2>
+                    <p>Home cinéma, sonorisation de bureau ou système de diffusion publique — nous installons des systèmes audio de qualité adaptés à vos besoins. Profitez d’un son clair, puissant et immersif.</p>
+               </Feature>
+               
+               <Vision />
 
-               <Simulator /> */}
-
-               <Headline >
-                    <h2><span className="text-highlight">Questions fréquemment posées</span></h2>
-               </Headline>
-
-               <FAQ />
-
-               <Headline >
-                    <h2>Vous êtes à un clic de <span className="text-highlight">la réussite !</span></h2>
-                    <p>Lancez votre première campagne et voyez les résultats.</p>
-               </Headline>
                
                <Action />
+               
+
+               {/* <Headline >
+                    <h2>Ça marche déjà pour nos utilisateurs. <br/><span className="text-highlight">Pourquoi pas vous ?</span></h2>
+               </Headline> */}
+
+               {/* <Testimonials /> */}
+               
+               
                
                <Footer />
 

@@ -1,13 +1,38 @@
 @import "./Variable.scss";
+// @use "./Variable.scss";
 
 .brands-container {
+     background-color: $PrimaryColor;
      
-
      @media (max-width: 768px) {
           
      }
 
      .brands-wrapper {
+          width: 100%;
+          // padding: 2rem 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .brands-logos {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: center;
+               align-items: center;
+               gap: 2rem;
+               padding: 2rem 0;
+
+               img {
+                    width: 9rem;
+                    height: auto;
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                         transform: scale(1.1);
+                    }
+               }
+          }
           
 
           @media (max-width: 768px) {

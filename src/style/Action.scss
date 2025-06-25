@@ -1,16 +1,19 @@
 @import "./Variable.scss";
+// @use "./Variable.scss";
 
 .action-container {
      display: flex;
+     flex-direction: column;
      align-items: center;
      justify-content: center;
      padding-bottom: 4rem;
-     padding-top: 3rem;
-     background: $BackgroundDarkColor;
-     background-image: url("../assets/ouispad_lp_bg.avif");
-     background-position: 50%;
-     background-repeat: no-repeat;
-     background-size: cover;
+     background-color: $WhiteColor;
+     // padding-top: 3rem;
+     // background: $BackgroundDarkColor;
+     // background-image: url("../assets/ouispad_lp_bg.avif");
+     // background-position: 50%;
+     // background-repeat: no-repeat;
+     // background-size: cover;
 
      @media (max-width: 768px) {
           
@@ -21,10 +24,13 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          gap: 2rem;
           border-radius: 1rem;
+          margin-top: 3rem;
 
           @media (max-width: 768px) {
                width: 100%;
+               flex-direction: column;
           }
 
           .primary-button {

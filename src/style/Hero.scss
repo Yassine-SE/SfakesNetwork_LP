@@ -1,20 +1,66 @@
 @import "./Variable.scss";
+// @use "./Variable.scss";
+
+
 
 /* Hero */
+
+.hero-section {
+     background: $PrimaryColor;
+     height: 100vh;
+
+     .hero-image-container {
+          position: absolute;
+          top: 0;
+          right: 0;
+          opacity: .8;
+          width: 100%;
+          background-image: url("../assets/hero-section-img-1.jpg");
+          height: 100%;
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          @media (max-width: 768px) {
+               background-image: url("../assets/future_hero.jpg");
+               background-position: top;
+               background-size: cover;
+          }
+
+          .left-shadow{
+               position: absolute;
+               left: 0;
+               top: 0;
+               width: 70%;
+               height: 100%;
+               background: linear-gradient(90deg, #28303ad1, #28303ad1, #28303a87, transparent);
+
+               
+               @media (max-width: 768px) {
+                    width: 100%;
+                    backdrop-filter: blur(2px);
+                    background: linear-gradient(0deg, #28303ad1, #28303ad1, #28303a87, transparent);
+               }
+
+          }
+     }
+}
+
 .hero-container {
      position: relative;
-     padding-bottom: 2rem;
+     // padding-bottom: 2rem;
      display: flex;
      align-items: center;
      justify-content: center;
-     background: $BackgroundDarkColor;
-     background-image: url("../assets/ouispad_lp_bg.avif");
-     background-position: 50%;
-     background-repeat: no-repeat;
-     background-size: cover;
+     // background: $BackgroundDarkColor;
+     // background-image: url("../assets/ouispad_lp_bg.avif");
+     // background-position: 50%;
+     // background-repeat: no-repeat;
+     // background-size: cover;
      
      .hero-wrapper {
           width: 65rem;
+          padding-top: 2rem;
           display: flex;
           position: relative;
           
@@ -32,7 +78,7 @@
           padding-top: 3rem;
           position: relative;
           z-index: 1;
-          width: 50%;
+          width: 60%;
 
           @media (max-width: 768px) {
                width: 100%;
@@ -50,29 +96,30 @@
                h1 {
                     color: $WhiteColor;
                     font-family: $FontBold;
-                    font-size: 3rem;
+                    font-size: 2.4rem;
                     font-weight: 500;
                     line-height: 1.4;
+                    // margin-bottom: 3rem;
                     text-shadow: 0px 2px 5px #00000012;
 
                     @media (max-width: 768px) {
                          width: 100%;
-                         font-size: 2rem;
+                         font-size: 2.6rem;
                     }
                }
 
                p {
                     color: $WhiteColor;
-                    font-size: .9rem;
-                    font-weight: 500;
+                    font-size: 1rem;
+                    font-weight: 400;
                     // letter-spacing: 1px;
-                    margin-bottom: 1rem;
+                    margin-bottom: 2rem;
                     line-height: 2;
                     // opacity: .6;
 
                     @media (max-width: 768px) {
                          width: 100%;
-                         font-size: 0.75rem;
+                         font-size: 1rem;
                          letter-spacing: 0.5px;
                     }
 
@@ -190,7 +237,7 @@
           align-items: center;
           justify-content: center;
           gap: 3rem;
-          width: 50%;
+          width: 40%;
           position: relative;
           right: -2rem;
           perspective: 160rem;

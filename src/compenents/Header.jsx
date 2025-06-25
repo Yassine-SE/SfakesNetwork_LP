@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../style/Header.scss"
-import logo from "../assets/Ouispad-logo-white.svg"
-// import logo from "../assets/Ouispad-Logo.svg"
+import logo from "../assets/SN_logo.svg"
+// import logo from "../assets/SN_logo-white.svg"
 
 
 const scrollToSection = (id) => {
@@ -38,16 +38,14 @@ const Header = () => {
 
                <div className={`header-nav ${isMenuOpen ? 'active' : ''}`}>
                     <nav className="nav">
-                         <a onClick={() => menuClicked("Feature")}>Fonctionnalités</a>
-                         <a onClick={() => menuClicked("Integration")}>Integration</a>
-                         <a onClick={() => menuClicked("FAQ")}>FAQ</a>
-                         {/* <a onClick={() => menuClicked("Pricing")}>Pricing</a> */}
-                         <a onClick={() => menuClicked("Footer")}>Contact</a>
+                         <a onClick={() => menuClicked("About")}>À propos</a>
+                         <a onClick={() => menuClicked("Services")}>Nos services</a>
+                         <a onClick={() => menuClicked("Project")}>Projets</a>
+                         <a onClick={() => menuClicked("Contact")}>Contactez-nous</a>
                     </nav>
 
                     <nav className="nav">
-                         <a className="signin-button" href="https://app.ouispad.fr/login" onClick={() => setIsMenuOpen(false)}>Se connecter</a>
-                         <a className="primary-button small" href="https://app.ouispad.fr/signup" onClick={() => setIsMenuOpen(false)}>S'inscrire</a>
+                         <a className="primary-button small" href="#" onClick={() => setIsMenuOpen(false)}>Obtenez un devis gratuit</a>
                     </nav>
                </div>
                
