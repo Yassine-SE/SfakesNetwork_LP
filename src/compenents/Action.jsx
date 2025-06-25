@@ -15,7 +15,7 @@ const Action = () => {
 
                <div className="action-wrapper">
                     <a id="Signup_btn" className="primary-button" href="#">Obtenez un devis gratuit</a>
-                    <a className="outline-button" href="#"><FiPhone/> Appelez-nous</a>
+                    <a className="outline-button" href="tel:+212 671-199919"><FiPhone/> Appelez-nous</a>
                </div>
           </section>
      );

@@ -23,7 +23,7 @@ const Hero = () => {
                          
                          <div className="hero-call-to-action">
                               <a id="Signup_btn" className="primary-button" href="#">Obtenez un devis gratuit</a>
-                              <a className="outline-button white" href="#"><FiPhone/> Appelez-nous</a>
+                              <a className="outline-button white" href="tel:+212 671-199919"><FiPhone/> Appelez-nous</a>
                          </div>
 
                     </div>
