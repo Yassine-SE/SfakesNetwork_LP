@@ -1,5 +1,6 @@
-import { useState } from "react";
 import "../style/Header.scss"
+import { useState } from "react";
+import QuoteModal from './QuoteModal';
 import logo from "../assets/SN_logo.svg"
 // import logo from "../assets/SN_logo-white.svg"
 
@@ -9,6 +10,8 @@ const scrollToSection = (id) => {
 };
 
 const Header = () => {
+     
+     const [modalOpen, setModalOpen] = useState(false);
      const [isMenuOpen, setIsMenuOpen] = useState(false);
 
      const toggleMenu = () => {
@@ -23,6 +26,10 @@ const Header = () => {
 
 
      return (
+          <>
+          
+          <QuoteModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+          
           <header className="header-container">
                <div className="header-wrapper">
 
@@ -45,12 +52,14 @@ const Header = () => {
                     </nav>
 
                     <nav className="nav">
-                         <a className="primary-button small" href="#" onClick={() => setIsMenuOpen(false)}>Obtenez un devis gratuit</a>
+                         <a className="primary-button small" onClick={() => setModalOpen(true)}>Obtenez un devis gratuit</a>
                     </nav>
                </div>
                
                </div>
           </header>
+          
+          </>
      );
 };
 

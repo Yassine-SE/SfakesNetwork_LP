@@ -1,11 +1,20 @@
 import "../style/Hero.scss"
+import { useState } from 'react';
 import Header from "./Header";
+import QuoteModal from './QuoteModal';
 import { FiPhone } from "react-icons/fi";
 
 
 const Hero = () => {
+     
+     const [modalOpen, setModalOpen] = useState(false);
+
      return (
 
+          <>
+          <QuoteModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+          
+          
           <section className="hero-section">
           
           <Header />
@@ -22,7 +31,7 @@ const Hero = () => {
                          <p>Des installations de réseaux aux systèmes de surveillance <br/>et de sonorisation, nous vous proposons des solutions <br/>expertes adaptées à vos besoins.</p>
                          
                          <div className="hero-call-to-action">
-                              <a id="Signup_btn" className="primary-button" href="#">Obtenez un devis gratuit</a>
+                              <a id="Signup_btn" className="primary-button" onClick={() => setModalOpen(true)}>Obtenez un devis gratuit</a>
                               <a className="outline-button white" href="tel:+212 671-199919"><FiPhone/> Appelez-nous</a>
                          </div>
 
@@ -41,6 +50,8 @@ const Hero = () => {
           </div>
           
           </section>
+          
+          </>
      );
 };
 

@@ -1,0 +1,95 @@
+@import "./Variable.scss";
+// @use "./Variable.scss";
+
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 2rem;
+  width: 90%;
+  max-width: 460px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: $PrimaryColor;
+  text-align: center;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: .8rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+  border-color: $PrimaryColor;
+  outline: none;
+  border-width: 2px;
+}
+
+.modal-content button[type="submit"] {
+     background-image: linear-gradient(45deg, $PrimaryColor, $PrimaryColor, #9fffd0);
+     color: white;
+     border: none;
+     padding: 0.75rem 1.5rem;
+     width: 100%;
+     border-radius: 8px;
+     font-size: 1rem;
+     font-weight: 500;
+     cursor: pointer;
+     box-shadow: rgba(40, 48, 58, 0.4) 0px 2px 4px, rgba(40, 48, 58, 0.3) 0px 7px 13px -3px, rgba(40, 48, 58, 0.2) 0px -3px 0px inset;
+
+     transition: background 0.2s ease;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #092947;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #aaa;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close:hover {
+  color: #c62222;
+}

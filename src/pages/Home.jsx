@@ -70,17 +70,7 @@ const Home = () => {
                
                <Vision />
 
-               
                <Action />
-               
-
-               {/* <Headline >
-                    <h2>Ça marche déjà pour nos utilisateurs. <br/><span className="text-highlight">Pourquoi pas vous ?</span></h2>
-               </Headline> */}
-
-               {/* <Testimonials /> */}
-               
-               
                
                <Footer />
 
