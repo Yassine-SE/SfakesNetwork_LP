@@ -16,6 +16,7 @@ import Network_img from "../assets/Network_img.jpg"
 import Surveillance_img from "../assets/Surveillance_img.jpg"
 import Wifi_img from "../assets/Wifi_img.jpg"
 import Access_img from "../assets/Access_img.jpg"
+import Phone_img from "../assets/phone_img.jpg"
 import Sound_img from "../assets/Sound_img.jpg"
 
 
@@ -38,7 +39,8 @@ const Home = () => {
                
                <Feature direction={false} image={Network_img}>
                     <h2>Infrastructure réseau fiable pour une connectivité sans faille</h2>
-                    <p>Nous installons des réseaux filaires et sans fil pour les maisons et les entreprises. Que ce soit pour un nouveau bureau ou une mise à niveau, nous assurons une connexion rapide et sécurisée grâce aux routeurs, commutateurs et câblages structurés les plus récents.</p>
+                    {/* <p>Nous installons des réseaux filaires et sans fil pour les maisons et les entreprises. Que ce soit pour un nouveau bureau ou une mise à niveau, nous assurons une connexion rapide et sécurisée grâce aux routeurs, commutateurs et câblages structurés les plus récents.</p> */}
+                    <p>Pour assurer une connectivité réseau fiable, sécurisée et sans faille, il est essentiel d'adopter une infrastructure robuste, qui comprend des mesures de sécurité, des stratégies de segmentation du réseau, et des protocoles de chiffrement.</p>
                </Feature>
 
                <Feature direction={true} image={Surveillance_img}>
@@ -52,11 +54,16 @@ const Home = () => {
                </Feature>
                
                <Feature direction={true} image={Access_img}>
-                    <h2>Alarmes intelligentes et contrôle d’accès pour une sécurité maximale</h2>
-                    <p>Nos systèmes de sécurité détectent les intrusions grâce à des détecteurs de mouvement, capteurs de portes/fenêtres et alarmes connectées. Nous proposons également des solutions de contrôle d’accès pour les portes, portails et zones sensibles.</p>
+                    <h2>Contrôle d’accès intelligent et visiophones pour une sécurité renforcée</h2>
+                    <p>Nous installons des systèmes de contrôle d’accès modernes tels que claviers, badges RFID et visiophones connectés. Gérez les entrées de votre maison ou entreprise en toute sécurité, avec des solutions fiables et faciles à utiliser.</p>
                </Feature>
                
-               <Feature direction={false} image={Sound_img}>
+               <Feature direction={false} image={Phone_img}>
+                    <h2>Systèmes de téléphonie IP modernes pour une communication claire</h2>
+                    <p>Nous installons des systèmes de téléphonie IP offrant une qualité audio optimale, une configuration flexible et une intégration complète à votre réseau. La solution idéale pour les entreprises souhaitant améliorer leurs communications internes et externes.</p>
+               </Feature>
+               
+               <Feature direction={true} image={Sound_img}>
                     <h2>Solutions audio sur mesure pour tous les environnements</h2>
                     <p>Home cinéma, sonorisation de bureau ou système de diffusion publique — nous installons des systèmes audio de qualité adaptés à vos besoins. Profitez d’un son clair, puissant et immersif.</p>
                </Feature>

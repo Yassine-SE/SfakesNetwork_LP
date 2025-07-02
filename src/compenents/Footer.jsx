@@ -19,6 +19,7 @@ const Footer = () => {
                 <div className="footer-links">
                     <h4>Contact</h4>
                     <ul>
+                        <li><a href="tel:+212 671-199919">+212 671-199 919</a></li>
                         <li><a href="mailto:contact@sfakesnetwork.com">contact@sfakesnetwork.com</a></li>
                     </ul>
                 </div>
@@ -34,10 +35,10 @@ const Footer = () => {
                 <div className="footer-social">
                     <h4>Suivez-nous</h4>
                     <div className="social-icons">
-                        <a href="#https://instagram.com/ouispad" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                         <a href="#" rel="noopener noreferrer"><FaFacebookF /></a>
-                        <a href="#" rel="noopener noreferrer"><FaXTwitter /></a>
-                        <a href="#" rel="noopener noreferrer"><FaLinkedinIn /></a>
+                        {/* <a href="#" rel="noopener noreferrer"><FaXTwitter /></a>
+                        <a href="#" rel="noopener noreferrer"><FaLinkedinIn /></a> */}
                     </div>
                 </div>
             </div>
