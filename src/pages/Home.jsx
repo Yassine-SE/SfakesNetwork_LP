@@ -18,6 +18,7 @@ import Wifi_img from "../assets/Wifi_img.jpg"
 import Access_img from "../assets/Access_img.jpg"
 import Phone_img from "../assets/phone_img.jpg"
 import Sound_img from "../assets/Sound_img.jpg"
+import Plan_img from "../assets/plan_img.jpg"
 
 
 
@@ -37,6 +38,12 @@ const Home = () => {
                     {/* <p>Des réseaux sécurisés aux systèmes de surveillance intelligents et de sonorisation, <br/>nous offrons des solutions adaptées à vos besoins.</p> */}
                </Headline>
                
+               
+               <Feature direction={true} image={Plan_img}>
+                    <h2>Études techniques et plans sur mesure pour vos projets</h2>
+                    <p>Nous réalisons des études personnalisées et des plans détaillés pour vos installations réseau, sécurité, sonorisation et plus encore. Chaque projet est conçu selon vos besoins, votre espace et votre budget.</p>
+               </Feature>
+
                <Feature direction={false} image={Network_img}>
                     <h2>Infrastructure réseau fiable pour une connectivité sans faille</h2>
                     {/* <p>Nous installons des réseaux filaires et sans fil pour les maisons et les entreprises. Que ce soit pour un nouveau bureau ou une mise à niveau, nous assurons une connexion rapide et sécurisée grâce aux routeurs, commutateurs et câblages structurés les plus récents.</p> */}
