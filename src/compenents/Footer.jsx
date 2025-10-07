@@ -24,6 +24,14 @@ const Footer = () => {
                     </ul>
                 </div>
                 
+                <div className="footer-links">
+                    <h4>Adresse</h4>
+                    <ul>
+                        <li>SFAKES NETWORK SARL AU</li>
+                        <li>Av abdelkrim el khattabi rue hassan ben m'barek res el khattabia imm b 1er etg n°3 marrakech-gueliz</li>
+                    </ul>
+                </div>
+                
                 {/* <div className="footer-privacy">
                     <h4>Légal</h4>
                     <ul>

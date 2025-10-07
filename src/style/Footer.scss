@@ -41,6 +41,16 @@
 //      margin: 20px 0;
 //  }
  
+
+ .footer-links {
+    width: 25%;
+    
+     @media (max-width: 768px) {
+        margin: 0px 30px;
+        width: unset;
+    }
+ }
+
  .footer-links h4, .footer-privacy h4, .footer-social h4 {
      font-size: 1.2rem;
      margin-bottom: 10px;
